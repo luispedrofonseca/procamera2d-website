@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Luís Pedro Fonseca - Unity Developer">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Core - ProCamera2D</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../.."><img src="../../images/procamera2d_logo.png" alt="ProCamera2D" style="width:220px;height:50px;"></a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">HOME</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DEMOS <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../demo_platformer/">Platformer</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demo_topdownshooter/">Top Down Shooter</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">USER GUIDE <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li class="active">
+                            <a href="./">Core</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_camera_window/">Extension - Camera Window</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_cinematics/">Extension - Cinematics</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_forward_focus/">Extension - Forward Focus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_geometry_boundaries/">Extension - Geometry Boundaries</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_limit_distance/">Extension - Limit Distance</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_limit_speed/">Extension - Limit Speed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_numeric_boundaries/">Extension - Numeric Boundaries</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_pan_and_zoom/">Extension - Pan And Zoom</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_parallax/">Extension - Parallax</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_pixel_perfect/">Extension - Pixel Perfect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_pointer_influence/">Extension - Pointer Influence</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_rails/">Extension - Rails</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_repeater/">Extension - Repeater</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_shake/">Extension - Shake</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_speed_based_zoom/">Extension - Speed Based Zoom</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_transitions_fx/">Extension - Transitions FX</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension_zoom_to_fit/">Extension - Zoom To Fit</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../trigger_boundaries/">Trigger - Boundaries</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../trigger_influence/">Trigger - Influence</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../trigger_rails/">Trigger - Rails</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../trigger_zoom/">Trigger - Zoom</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../showcase/">SHOWCASE</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/">ABOUT</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../support/">SUPPORT</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                
+                <li>
+                    <a href="https://www.assetstore.unity3d.com/en/#!/content/42095">
+                        <i class="fa fa-shopping-cart"></i> BUY NOW!
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#core">Core</a></li>
+        
+    
+        <li class="main "><a href="#overview">Overview</a></li>
+        
+            <li><a href="#multi-target-follow-weighted" style="padding-left: 30px;font-size: smaller;">Multi-target follow (weighted)</a></li>
+        
+            <li><a href="#follow-smoothness-per-axis" style="padding-left: 30px;font-size: smaller;">Follow smoothness (per axis)</a></li>
+        
+            <li><a href="#perspective-orthographic-modes" style="padding-left: 30px;font-size: smaller;">Perspective &amp; Orthographic modes</a></li>
+        
+            <li><a href="#all-axes-support-xy-xz-yz" style="padding-left: 30px;font-size: smaller;">All axes support (XY, XZ, YZ)</a></li>
+        
+    
+        <li class="main "><a href="#setup">Setup</a></li>
+        
+    
+        <li class="main "><a href="#editor">Editor</a></li>
+        
+            <li><a href="#drop-targets-area" style="padding-left: 30px;font-size: smaller;">Drop Targets Area</a></li>
+        
+            <li><a href="#targets-list" style="padding-left: 30px;font-size: smaller;">Targets List</a></li>
+        
+            <li><a href="#center-target-on-start" style="padding-left: 30px;font-size: smaller;">Center Target On Start</a></li>
+        
+            <li><a href="#axis" style="padding-left: 30px;font-size: smaller;">Axis</a></li>
+        
+            <li><a href="#update-type" style="padding-left: 30px;font-size: smaller;">Update Type</a></li>
+        
+            <li><a href="#ofsset" style="padding-left: 30px;font-size: smaller;">Ofsset</a></li>
+        
+            <li><a href="#zoom-with-fov" style="padding-left: 30px;font-size: smaller;">Zoom With FOV</a></li>
+        
+            <li><a href="#extensions" style="padding-left: 30px;font-size: smaller;">Extensions</a></li>
+        
+            <li><a href="#triggers" style="padding-left: 30px;font-size: smaller;">Triggers</a></li>
+        
+    
+        <li class="main "><a href="#methods">Methods</a></li>
+        
+            <li><a href="#apply-influence" style="padding-left: 30px;font-size: smaller;">Apply Influence</a></li>
+        
+            <li><a href="#apply-influences-timed" style="padding-left: 30px;font-size: smaller;">Apply Influences Timed</a></li>
+        
+            <li><a href="#add-camera-target" style="padding-left: 30px;font-size: smaller;">Add Camera Target</a></li>
+        
+            <li><a href="#remove-camera-target" style="padding-left: 30px;font-size: smaller;">Remove Camera Target</a></li>
+        
+            <li><a href="#get-camera-target" style="padding-left: 30px;font-size: smaller;">Get Camera Target</a></li>
+        
+            <li><a href="#adjust-camera-target-influence" style="padding-left: 30px;font-size: smaller;">Adjust Camera Target Influence</a></li>
+        
+            <li><a href="#update-screen-size" style="padding-left: 30px;font-size: smaller;">Update Screen Size</a></li>
+        
+            <li><a href="#move-camera-instantly-to-position" style="padding-left: 30px;font-size: smaller;">Move Camera Instantly to Position</a></li>
+        
+            <li><a href="#reset" style="padding-left: 30px;font-size: smaller;">Reset</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<p><img alt="HEADER" src="../core" /></p>
+<h3 id="core">Core</h3>
+<h2 id="overview">Overview</h2>
+<p>The <code>Core</code> represents the main class - ProCamera2D.cs. It's a very simple class takes care of keeping track of all targets, knowing which axis to use (XY, XZ, YZ), how fast to move and, more importantly, it's the <em>brain</em> of all extensions and triggers.
+Here are the main features of the Core:</p>
+<h3 id="multi-target-follow-weighted">Multi-target follow (weighted)</h3>
+<blockquote>
+<p>If your game has multiple characters or if you just want to follow that special missile while still keeping your player in sight just add another target (or as many as you want) to the camera and you’re done. ProCamera2D will find the average position of them taking in consideration their variable influences. Perfect for your Super Smash Bros. clone! </p>
+<p><img alt="" src="../../images/gifs/multi_targets.gif" /></p>
+</blockquote>
+<h3 id="follow-smoothness-per-axis">Follow smoothness (per axis)</h3>
+<blockquote>
+<p>Sometimes you need your camera to be very fast on a certain axis and more fluid on another. Think platformers for example, you might want your camera to be less rigid when jumping. With ProCamera2D you can define the smoothness of the follow on each axis.</p>
+<p><img alt="" src="../../images/gifs/follow_smoothness.gif" /></p>
+</blockquote>
+<h3 id="perspective-orthographic-modes">Perspective &amp; Orthographic modes</h3>
+<blockquote>
+<p>All ProCamera2D features (except parallax and pixel-perfect) work exactly the same either with a perspective (3D) or an orthographic (2D) camera. No special configuration required. Simply change your projection type and you’re done!</p>
+<p><img alt="" src="../../images/gifs/perspective_ortho_modes.gif" /></p>
+</blockquote>
+<h3 id="all-axes-support-xy-xz-yz">All axes support (XY, XZ, YZ)</h3>
+<blockquote>
+<p>Are you building a platformer? A top-down racing game? A space simulator with a crazy camera setup? No worries, ProCamera2D has got you covered. With it’s multi-axis support you can use it on any kind of 2D &amp; 2.5D game!</p>
+<p><img alt="" src="../../images/gifs/all_axes.gif" /></p>
+</blockquote>
+<h2 id="setup">Setup</h2>
+<p>Select your game camera (called Main Camera by default) and drag the component file to the Main Camera GameObject. You should now see the ProCamera2D component editor on the Inspector window when you select your Main Camera GameObject.</p>
+<h2 id="editor">Editor</h2>
+<p>This is how the ProCamera2D editor looks like. You can find it on your camera after adding the ProCamera2D component as explained above.</p>
+<p><img alt="" src="../../images/procamera2d_main_editor.png" /></p>
+<h3 id="drop-targets-area">Drop Targets Area</h3>
+<p>As you can probably guess, this area is where you can drag your camera targets to. By dropping them inside this box they will be automatically added to the targets list below.</p>
+<p><img alt="" src="../../images/procamera2d_main_editor_drop_targets_area.png" /></p>
+<h3 id="targets-list">Targets List</h3>
+<p>This list shows you all the targets that the camera is currently following. You can re-order the targets (although it makes no difference), delete or duplicate a target.</p>
+<p><em>Parameters</em>:</p>
+<ul>
+<li><code>Transform</code>: The Transform component of the target GameObject</li>
+<li><code>Offset</code>: A horizontal and a vertical float that offsets the target position that the camera will follow</li>
+<li><code>Influence</code> (0 – 1): A horizontal and a vertical float between 0 and 1 that defines how much influence each axis should have in the final camera position.</li>
+</ul>
+<p><img alt="" src="../../images/procamera2d_main_editor_targets_list.png" /></p>
+<h3 id="center-target-on-start">Center Target On Start</h3>
+<p>If this checkbox is enabled the camera will instantly move to the targets position when the game starts. For this to work the target needs to be already added. 
+For centering targets added during runtime you should use the method <code>Reset</code>.</p>
+<p><img alt="" src="../../images/procamera2d_main_editor_center_on_start.png" /></p>
+<h3 id="axis">Axis</h3>
+<p>Choose which axis your game uses. If it’s a platformer you’ll probably stick to XY, but if it’s a top-down game you might be using XZ. Feel free to choose what fits you best. All features work exactly the same across all axes. Don’t forget to rotate the camera accordingly.</p>
+<p><img alt="" src="../../images/procamera2d_main_editor_axis.png" /></p>
+<h3 id="update-type">Update Type</h3>
+<p>Choose when do you want the camera to update its position. Use FixedUpdate if your objects are moved using physics and stick to LateUpdate if you’re moving them outside the physics loop. If you’re using a mixture of both you’ll have to test both types and see what works best for you.
+If you want to use a custom timestep and need to manually update the camera movement, select ManualUpdate. This will require you to call the Move method on the core class and pass the desired timestep.
+Remember, if you’re getting a stuttering camera movement is probably because you’re using the wrong update type.</p>
+<p><img alt="" src="../../images/procamera2d_main_editor_update_type.png" /></p>
+<h3 id="ofsset">Ofsset</h3>
+<p>This value adds an overall offset to the final camera position given by the targets and other influences. Use it to give a constant offset to the camera position. Remember that each target can also have it’s own offset value.</p>
+<p><img alt="" src="../../images/procamera2d_main_editor_offset.png" /></p>
+<h3 id="zoom-with-fov">Zoom With FOV</h3>
+<p>This option is only available when using a perspective camera. If enabled, the camera will zoom by changing the FOV instead of actually moving closer/further to/from the objects. Might look better on some cases, but on most it will cause some visual distortion above a certain threshold. Use with care.</p>
+<p><img alt="" src="../../images/procamera2d_main_editor_zoom_fov.png" /></p>
+<h3 id="extensions">Extensions</h3>
+<p>In this section you control which extensions you want to have enabled for your camera. This section is here only as a quick way to add/remove components. You can still add/remove them manually like you would with any other component.
+See the user-guide for more information on each extension.</p>
+<p><img alt="" src="../../images/procamera2d_main_editor_extensions.png" /></p>
+<h3 id="triggers">Triggers</h3>
+<p>Use this section to add triggers and to navigate (on the scene view) to them. You can also see how many triggers of each type you have on the scene.
+See the user-guide for more information on each trigger.</p>
+<p><img alt="" src="../../images/procamera2d_main_editor_triggers.png" /></p>
+<h2 id="methods">Methods</h2>
+<p>Although you can accomplish almost everything with the ProCamera2D editor, you might feel the need to have a more precise control or even change some parameters during runtime. For that, you start by importing the ProCamera2D namespace, by putting the following code on the top of your class:</p>
+<pre><code class="js">using Com.LuisPedroFonseca.ProCamera2D;
+</code></pre>
+
+<p>After that, all you have to do is access, from anywhere on your code, the ProCamera2D static instance. In the following example we add a camera target during runtime.</p>
+<pre><code class="js">ProCamera2D.Instance.AddCameraTarget(myTransform);
+</code></pre>
+
+<p>Through the static ProCamera2D instance you can change any public parameter and access the methods described below.
+Please notice that all extensions and triggers can also be accessed for runtime configuration but do not provide static instances, so you have to access them like you would any other standard Unity component.</p>
+<hr />
+<h3 id="apply-influence">Apply Influence</h3>
+<p>This method is used by most extensions. What it does is simply applying the given influence to the camera during one frame.</p>
+<pre><code class="js">ApplyInfluence(Vector2 influence)
+</code></pre>
+
+<p><em>Parameters</em>:</p>
+<ul>
+<li><code>influence</code>: The vector representing the influence to be applied</li>
+</ul>
+<hr />
+<h3 id="apply-influences-timed">Apply Influences Timed</h3>
+<p>This method is similar to the previous one but here you can pass an array of different influences and their respective durations.</p>
+<pre><code class="js">ApplyInfluencesTimed(Vector2[] influences, float[] durations)
+</code></pre>
+
+<p><em>Parameters</em>:</p>
+<ul>
+<li><code>influences</code>: An array of Vector2’s with the influences to be applied</li>
+<li><code>durations</code>: An array of float’s with the duration of each corresponding influence</li>
+</ul>
+<hr />
+<h3 id="add-camera-target">Add Camera Target</h3>
+<p>Sometimes you’ll want to add some new camera targets during runtime. That’s where this method comes in.</p>
+<pre><code class="js">AddCameraTarget(Transform targetTransform, float targetInfluenceH = 1f, float targetInfluenceV = 1f, float duration = 0f)
+</code></pre>
+
+<p><em>Parameters</em>:</p>
+<ul>
+<li><code>targetTransform</code>: The transform component of the target</li>
+<li><code>targetInfluenceH</code>: The influence this target horizontal position should have when calculating the average position of all the targets</li>
+<li><code>targetInfluenceV</code>: The influence this target vertical position should have when calculating the average position of all the targets</li>
+<li><code>duration</code>: The time it takes for this target to reach it’s influence. Use it if you want a more progressive transition</li>
+</ul>
+<hr />
+<h3 id="remove-camera-target">Remove Camera Target</h3>
+<p>Not much to tell about this one. Use it to stop following a target.</p>
+<pre><code class="js">RemoveCameraTarget(Transform targetTransform, float duration = 0f)
+</code></pre>
+
+<p><em>Parameters</em>:</p>
+<ul>
+<li><code>targetTransform</code>: The transform component of the target</li>
+<li><code>duration</code>: The time it takes for this target to reach a zero influence. Use it if you want a more progressive transition</li>
+</ul>
+<hr />
+<h3 id="get-camera-target">Get Camera Target</h3>
+<p>Gets the corresponding CameraTarget from an object’s transform.</p>
+<pre><code class="js">GetCameraTarget(Transform targetTransform)
+</code></pre>
+
+<p><em>Parameters</em>:</p>
+<ul>
+<li><code>targetTransform</code>: The transform component of the target</li>
+</ul>
+<hr />
+<h3 id="adjust-camera-target-influence">Adjust Camera Target Influence</h3>
+<p>If you want to adjust at runtime the influence that a target has you can use this method. Great to adjust a target influence based on its distance or speed for example.</p>
+<pre><code class="js">AdjustCameraTargetInfluence(CameraTarget cameraTarget, float targetInfluenceH, float targetInfluenceV, float duration = 0f)
+</code></pre>
+
+<p><em>Parameters</em>:</p>
+<ul>
+<li><code>cameraTarget</code>: The CameraTarget of the target</li>
+<li><code>targetInfluenceH</code>: The influence this target horizontal position should have when calculating the average position of all the targets</li>
+<li><code>targetInfluenceV</code>: The influence this target vertical position should have when calculating the average position of all the targets</li>
+<li><code>duration</code>: The time it takes for this target to reach it’s influence. Don’t use a duration if calling every frame</li>
+</ul>
+<hr />
+<h3 id="update-screen-size">Update Screen Size</h3>
+<p>If you want to manually adjust at runtime the size of the camera.</p>
+<pre><code class="js">UpdateScreenSize(float newSize, float duration = 0f)
+</code></pre>
+
+<p><em>Parameters</em>:</p>
+<ul>
+<li><code>newSize</code>: Half of the wanted size in world units</li>
+<li><code>duration</code>: How long it should take to reach the provided size</li>
+</ul>
+<hr />
+<h3 id="move-camera-instantly-to-position">Move Camera Instantly to Position</h3>
+<p>If you want to manually move the camera.</p>
+<pre><code class="js">MoveCameraInstantlyToPosition(Vector2 cameraPos)
+</code></pre>
+
+<p><em>Parameters</em>:</p>
+<ul>
+<li><code>cameraPos</code>: The final position of the camera</li>
+</ul>
+<hr />
+<h3 id="reset">Reset</h3>
+<p>This method resets ProCamera2D and its extensions/triggers to their initial state. It’s very useful to use, for example, when your character dies and spawns in a different position on screen.</p>
+<pre><code class="js">Reset(bool centerOnTargets = true)
+</code></pre>
+
+<p><em>Parameters</em>:</p>
+<ul>
+<li><code>centerOnTargets</code>: If true (default), the camera will instantly move to your targets position</li>
+</ul></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <center>Copyright 2016 ProCamera2D | All Rights Reserved | A product by <a href="http://www.luispedrofonseca.com"><strong>Luís Pedro Fonseca</strong></a><p> </p></center>
+            
+                <center>
+                    <a href="http://www.twitter.com/lpfonseca" target="_blank" title="Twitter"><img src="../../images/icon-twitter.png" width="32" height="24"></a>
+                    <a href="http://forum.unity3d.com/threads/released-procamera2d-the-definitive-2d-camera-solution-for-unity.344436/" target="_blank" title="Unity Forums"><img src="../../images/icon-unity.png" width="32" height="24"></a>
+                    <a href="/support" title="Email"><img src="../../images/icon-email.png" width="32" height="24"></a>
+                </center>
+                <p></p>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/custom.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Enter your search terms below.</p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

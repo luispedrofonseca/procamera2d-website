@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>None/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>None/demo_platformer/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/demo_topdownshooter/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/user-guide/core/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_camera_window/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_cinematics/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_forward_focus/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_geometry_boundaries/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_limit_distance/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_limit_speed/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_numeric_boundaries/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_pan_and_zoom/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_parallax/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_pixel_perfect/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_pointer_influence/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_rails/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_repeater/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_shake/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_speed_based_zoom/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_transitions_fx/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/extension_zoom_to_fit/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/trigger_boundaries/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/trigger_influence/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/trigger_rails/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/trigger_zoom/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>None/showcase/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/about/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/support/</loc>
+     <lastmod>2016-07-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+</urlset>

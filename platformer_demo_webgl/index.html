@@ -1,0 +1,31 @@
+<!doctype html>
+<head>
+<style>
+.webgl
+{
+  margin: 0px;
+}
+
+iframe 
+{ 
+  overflow: hidden; 
+}
+</style>
+</head>
+<html lang="en-us">
+  <body class="webgl">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="500px" width="800px"></canvas>
+    <script type='text/javascript'>
+      var Module = 
+      {
+        TOTAL_MEMORY: 268435456,
+        errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+        compatibilitycheck: null,
+        dataUrl: "Release/platformer_demo_webgl.data",
+        codeUrl: "Release/platformer_demo_webgl.js",
+        memUrl: "Release/platformer_demo_webgl.mem",
+      };
+    </script>
+    <script src="Release/UnityLoader.js"></script>
+  </body>
+</html>
