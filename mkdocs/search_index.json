@@ -86,27 +86,27 @@
             "title": "Asset Store"
         }, 
         {
-            "location": "/demo_platformer/", 
-            "text": "DEMO PLATFORMER\n\n\n\n\nUse the arrow keys (or WAD) to move and jump.\n\n\nSwitch scenes on the top-right corner navigation.\n\n\nSwitch camera modes on the top-right button.\n\n\nAll demo scenes are included in the package.\n\n\n\n\n\n    \n\n\n\n\n\n\n    function loadWebGL() \n    {\n        document.getElementById(\"webgl\").innerHTML = '<iframe src= \"../platformer_demo_webgl\" width=\"920\" height=\"575\" frameborder=\"0\" scrolling=\"no\"></iframe>';\n    }\n\n\n\n\n\n\n\n\n\n\nIt might take a few seconds for the demo to load. Please be patient.\n\n\nThis demo runs in WebGL which is only supported by modern browsers.\n\n\nUnity's WebGL performance is degraded in comparison to other platforms.", 
+            "location": "/demo-platformer/", 
+            "text": "DEMO PLATFORMER\n\n\n\n\nUse the arrow keys (or WAD) to move and jump.\n\n\nSwitch scenes on the top-right corner navigation.\n\n\nSwitch camera modes on the top-right button.\n\n\nAll demo scenes are included in the package.\n\n\n\n\n\n    \n\n\n\n\n\n\n    function loadWebGL() \n    {\n        document.getElementById(\"webgl\").innerHTML = '<iframe src= \"../platformer-demo-webgl\" width=\"920\" height=\"575\" frameborder=\"0\" scrolling=\"no\"></iframe>';\n    }\n\n\n\n\n\n\n\n\n\n\nIt might take a few seconds for the demo to load. Please be patient.\n\n\nThis demo runs in WebGL which is only supported by modern browsers.\n\n\nUnity's WebGL performance is degraded in comparison to other platforms.", 
             "title": "Platformer"
         }, 
         {
-            "location": "/demo_platformer/#demo-platformer", 
-            "text": "Use the arrow keys (or WAD) to move and jump.  Switch scenes on the top-right corner navigation.  Switch camera modes on the top-right button.  All demo scenes are included in the package.   \n       \n    function loadWebGL() \n    {\n        document.getElementById(\"webgl\").innerHTML = '<iframe src= \"../platformer_demo_webgl\" width=\"920\" height=\"575\" frameborder=\"0\" scrolling=\"no\"></iframe>';\n    }     It might take a few seconds for the demo to load. Please be patient.  This demo runs in WebGL which is only supported by modern browsers.  Unity's WebGL performance is degraded in comparison to other platforms.", 
+            "location": "/demo-platformer/#demo-platformer", 
+            "text": "Use the arrow keys (or WAD) to move and jump.  Switch scenes on the top-right corner navigation.  Switch camera modes on the top-right button.  All demo scenes are included in the package.   \n       \n    function loadWebGL() \n    {\n        document.getElementById(\"webgl\").innerHTML = '<iframe src= \"../platformer-demo-webgl\" width=\"920\" height=\"575\" frameborder=\"0\" scrolling=\"no\"></iframe>';\n    }     It might take a few seconds for the demo to load. Please be patient.  This demo runs in WebGL which is only supported by modern browsers.  Unity's WebGL performance is degraded in comparison to other platforms.", 
             "title": "DEMO PLATFORMER"
         }, 
         {
-            "location": "/demo_topdownshooter/", 
+            "location": "/demo-topdownshooter/", 
             "text": "DEMO TOP-DOWN SHOOTER\n\n\nComing soon!\n\n\nIn the meantime feel free to explore the older version of the demo: \nTop-Down Shooter", 
             "title": "Top Down Shooter"
         }, 
         {
-            "location": "/demo_topdownshooter/#demo-top-down-shooter", 
+            "location": "/demo-topdownshooter/#demo-top-down-shooter", 
             "text": "", 
             "title": "DEMO TOP-DOWN SHOOTER"
         }, 
         {
-            "location": "/demo_topdownshooter/#coming-soon", 
+            "location": "/demo-topdownshooter/#coming-soon", 
             "text": "In the meantime feel free to explore the older version of the demo:  Top-Down Shooter", 
             "title": "Coming soon!"
         }, 
