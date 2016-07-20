@@ -272,7 +272,7 @@
         }, 
         {
             "location": "/user-guide/extension_cinematics/", 
-            "text": "Cinematics\n\n\nOverview\n\n\nThe Cinematics extension allows you to create simple, yet powerful, cinematic sequences for your game. It works by adding any number of \u201ccinematic targets\u201d to its editor and defining the parameters for each. You can then play or stop the cinematics at any time during your game and the camera will smoothly transition from its regular targets into the sequence and vice-versa.\nIn case you want to have multiple cinematics on your scene, you simply have to add multiple ProCamera2DCinematics components to your camera. For an example on how to achieve this see the TopDownShooter example included in the package.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nCinematic Targets\n: The targets the camera will follow during the cinematic\n\n\nEnd Duration\n (\n= 0): How long it takes the cinematic to stop and the camera to return its regular targets\n\n\nEnd Ease Type\n: The animation type of the stop transition\n\n\nUse Numeric Boundaries\n:  If enabled, the camera will be limited by the numeric boundaries if existent\n\n\nUse Letterbox\n: If enabled, the camera will show bars on top and bottom during the cinematic sequence\n\n\nLetterbox Amount\n (0 - .5): The size of the top and bottom letterbox bars\n\n\nLetterbox Anim Duration\n: The time it takes for the letterbox bars to appear and disappear\n\n\nLetterbox Color\n: The color of the letterbox bars\n\n\n\n\nCinematic Target Parameters\n:\n\n\n\n\nTarget\n: The Transform component of the target\n\n\nEase Type\n: The animation type of the camera movement to reach the target\n\n\nEase In Duration\n (\n= 0): The time it takes for the camera to reach the target\n\n\nHold Duration\n:  The time the camera follows the target. If below 0, you\u2019ll have to manually move to the next target by using the GoToNextTarget method\n\n\nZoom\n: The zoom the camera should make while following the target. Use 1 for no zoom\n\n\nSendMessage Name\n: The method name that will be called when the target is reached\n\n\nSendMessage Param\n: The parameter that will be sent when the above method is called\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Cinematics\n\n\nOverview\n\n\nThe Cinematics extension allows you to create simple, yet powerful, cinematic sequences for your game. It works by adding any number of \u201ccinematic targets\u201d to its editor and defining the parameters for each. You can then play or stop the cinematics at any time during your game and the camera will smoothly transition from its regular targets into the sequence and vice-versa.\nIn case you want to have multiple cinematics on your scene, you simply have to add multiple ProCamera2DCinematics components to your camera. For an example on how to achieve this see the TopDownShooter example included in the package.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nCinematic Targets\n: The targets the camera will follow during the cinematic\n\n\nEnd Duration\n (\n= 0): How long it takes the cinematic to stop and the camera to return its regular targets\n\n\nEnd Ease Type\n: The animation type of the stop transition\n\n\nUse Numeric Boundaries\n:  If enabled, the camera will be limited by the numeric boundaries if existent\n\n\nUse Letterbox\n: If enabled, the camera will show bars on top and bottom during the cinematic sequence\n\n\nLetterbox Amount\n (0 - .5): The size of the top and bottom letterbox bars\n\n\nLetterbox Anim Duration\n: The time it takes for the letterbox bars to appear and disappear\n\n\nLetterbox Color\n: The color of the letterbox bars\n\n\n\n\nCinematic Target Parameters\n:\n\n\n\n\nTarget\n: The Transform component of the target\n\n\nEase Type\n: The animation type of the camera movement to reach the target\n\n\nEase In Duration\n (\n= 0): The time it takes for the camera to reach the target\n\n\nHold Duration\n:  The time the camera follows the target. If below 0, you\u2019ll have to manually move to the next target by using the GoToNextTarget method\n\n\nZoom\n: The zoom the camera should make while following the target. Use 1 for no zoom\n\n\nSendMessage Name\n: The method name that will be called when the target is reached\n\n\nSendMessage Param\n: The parameter that will be sent when the above method is called", 
             "title": "Extension - Cinematics"
         }, 
         {
@@ -291,18 +291,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_cinematics/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_cinematics/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_forward_focus/", 
-            "text": "Forward Focus\n\n\nOverview\n\n\nThe Forward Focus extension compensates the targets movement by adding some room in front of them in order to focus on what\u2019s coming ahead. It\u2019s a must-have feature in most 2D action games.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nProgressive\n: If enabled, the camera will move to the focus position progressively according to the targets speed. If disabled the camera will move directly to the focus position\n\n\nSpeed Multiplier\n (\n= 0): Only available if Progressive field is enabled. This field represents a value by which to multiply the targets speed in case their speed is not sufficient to reach the focus position\n\n\nTransition Smoothness\n (\n= 0): Represents how smooth the transition of the focus position should be. The lower the number the quickest the transition is\n\n\nMaintain Influence On Stop\n:  If enabled, once the target stops moving the forward focus stays on stationary. If disabled it returns to zero on stop\n\n\nLeft Focus\n (0 - 1): How much should the camera compensate when moving left (in normalised viewport space)\n\n\nRight Focus\n (0 - 1): How much should the camera compensate when moving right (in normalised viewport space)\n\n\nUp Focus\n (0 - 1): How much should the camera compensate when moving up (in normalised viewport space)\n\n\nDown Focus\n (0 - 1): How much should the camera compensate when moving down (in normalised viewport space)\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Forward Focus\n\n\nOverview\n\n\nThe Forward Focus extension compensates the targets movement by adding some room in front of them in order to focus on what\u2019s coming ahead. It\u2019s a must-have feature in most 2D action games.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nProgressive\n: If enabled, the camera will move to the focus position progressively according to the targets speed. If disabled the camera will move directly to the focus position\n\n\nSpeed Multiplier\n (\n= 0): Only available if Progressive field is enabled. This field represents a value by which to multiply the targets speed in case their speed is not sufficient to reach the focus position\n\n\nTransition Smoothness\n (\n= 0): Represents how smooth the transition of the focus position should be. The lower the number the quickest the transition is\n\n\nMaintain Influence On Stop\n:  If enabled, once the target stops moving the forward focus stays on stationary. If disabled it returns to zero on stop\n\n\nLeft Focus\n (0 - 1): How much should the camera compensate when moving left (in normalised viewport space)\n\n\nRight Focus\n (0 - 1): How much should the camera compensate when moving right (in normalised viewport space)\n\n\nUp Focus\n (0 - 1): How much should the camera compensate when moving up (in normalised viewport space)\n\n\nDown Focus\n (0 - 1): How much should the camera compensate when moving down (in normalised viewport space)", 
             "title": "Extension - Forward Focus"
         }, 
         {
@@ -321,18 +311,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_forward_focus/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_forward_focus/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_geometry_boundaries/", 
-            "text": "Geometry Boundaries\n\n\nOverview\n\n\nThe Geometry Boundaries extension makes the camera \u201ccollide\u201d with any 3D collider on the layer defined by the Layer parameter. This allows you to define camera boundaries using, for example, your level walls or any other 3D collider. Place your colliders with caution to prevent getting the camera stuck and avoid having the camera inside a collider on start. The colliders should be placed at Z = 0, if you\u2019re using the XY axis, or the equivalent in case you\u2019re using other axis.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nBoundaries Layer Mask\n: The layers you want your camera to collide with\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Geometry Boundaries\n\n\nOverview\n\n\nThe Geometry Boundaries extension makes the camera \u201ccollide\u201d with any 3D collider on the layer defined by the Layer parameter. This allows you to define camera boundaries using, for example, your level walls or any other 3D collider. Place your colliders with caution to prevent getting the camera stuck and avoid having the camera inside a collider on start. The colliders should be placed at Z = 0, if you\u2019re using the XY axis, or the equivalent in case you\u2019re using other axis.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nBoundaries Layer Mask\n: The layers you want your camera to collide with", 
             "title": "Extension - Geometry Boundaries"
         }, 
         {
@@ -351,18 +331,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_geometry_boundaries/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_geometry_boundaries/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_limit_distance/", 
-            "text": "Limit Distance\n\n\nOverview\n\n\nThe Limit Distance extension prevents your target from leaving the screen area. For example, if you have a very smooth camera follow, sometimes if the player moves very fast, he might get out of the screen. By using this extension, the target will push the camera in order to always stay inside the visible area.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nLimit Horizontal Distance\n: If enabled, the target will push the camera horizontally once it reaches the defined limits\n\n\nLimit Vertical Distance\n: If enabled, the target will push the camera vertically once it reaches the defined limits\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Limit Distance\n\n\nOverview\n\n\nThe Limit Distance extension prevents your target from leaving the screen area. For example, if you have a very smooth camera follow, sometimes if the player moves very fast, he might get out of the screen. By using this extension, the target will push the camera in order to always stay inside the visible area.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nLimit Horizontal Distance\n: If enabled, the target will push the camera horizontally once it reaches the defined limits\n\n\nLimit Vertical Distance\n: If enabled, the target will push the camera vertically once it reaches the defined limits", 
             "title": "Extension - Limit Distance"
         }, 
         {
@@ -381,18 +351,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_limit_distance/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_limit_distance/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_limit_speed/", 
-            "text": "Limit Speed\n\n\nOverview\n\n\nThe Limit Speed extension prevents the camera from moving faster than a certain speed. This can be useful to prevent very fast movements caused by certain targets.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nLimit Horizontal Speed\n: If enabled, the camera speed will be limited on the horizontal axis\n\n\nLimit Vertical Speed\n: If enabled, the camera speed will be limited on the vertical axis\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Limit Speed\n\n\nOverview\n\n\nThe Limit Speed extension prevents the camera from moving faster than a certain speed. This can be useful to prevent very fast movements caused by certain targets.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nLimit Horizontal Speed\n: If enabled, the camera speed will be limited on the horizontal axis\n\n\nLimit Vertical Speed\n: If enabled, the camera speed will be limited on the vertical axis", 
             "title": "Extension - Limit Speed"
         }, 
         {
@@ -411,18 +371,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_limit_speed/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_limit_speed/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_numeric_boundaries/", 
-            "text": "Numeric Boundaries\n\n\nOverview\n\n\nThe Numeric Boundaries extension prevents the camera from moving beyond the assigned values. This is a very flexible extension and allows you to achieve all kinds of different results. You could even, for example, animate the left boundary value and make an auto-scrolling level.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nUse Numeric Boundaries\n: If enabled, the camera will be limited by the boundaries defined below\n\n\nUse Top\n: If enabled, the top border of the camera will be limited by the defined value\n\n\nUse Bottom\n: If enabled, the bottom border of the camera will be limited by the defined value\n\n\nUse Left\n: If enabled, the left border of the camera will be limited by the defined value\n\n\nUse Right\n: If enabled, the right border of the camera will be limited by the defined value\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Numeric Boundaries\n\n\nOverview\n\n\nThe Numeric Boundaries extension prevents the camera from moving beyond the assigned values. This is a very flexible extension and allows you to achieve all kinds of different results. You could even, for example, animate the left boundary value and make an auto-scrolling level.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nUse Numeric Boundaries\n: If enabled, the camera will be limited by the boundaries defined below\n\n\nUse Top\n: If enabled, the top border of the camera will be limited by the defined value\n\n\nUse Bottom\n: If enabled, the bottom border of the camera will be limited by the defined value\n\n\nUse Left\n: If enabled, the left border of the camera will be limited by the defined value\n\n\nUse Right\n: If enabled, the right border of the camera will be limited by the defined value", 
             "title": "Extension - Numeric Boundaries"
         }, 
         {
@@ -441,18 +391,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_numeric_boundaries/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_numeric_boundaries/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_pan_and_zoom/", 
-            "text": "Pan And Zoom\n\n\nOverview\n\n\nPerfect for RTS\u2019s or any other kind of game where the user has control over the camera, the PanAndZoom extension brings you a wide range of options for manually moving and zooming the camera. Please notice that when using this extension it is advised to not have any camera targets so the camera knows what to follow. If needed, you can always disable the extension temporarily and add/remove the targets at run-time.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nAllow Zoom\n: If enabled, the user will be able to manually zoom the camera\n\n\nMouse Zoom Speed\n: The speed at which to zoom when using the mouse wheel (Desktop Only)\n\n\nPinch Zoom Speed\n: The speed at which to zoom when using the pinch gesture (Mobile Only)\n\n\nZoom Smoothness\n: The smoothness of the zoom\n\n\nMax Zoom In Amount\n: Represents the maximum amount the camera should zoom in\n\n\nMax Zoom Out Amount\n: Represents the maximum amount the camera should zoom out\n\n\nZoom To Input Center\n: If enabled, the camera will zoom to the current input position (mouse or touch). If disabled, the camera will zoom to its center\n\n\nAllow Pan\n: If enabled, the user will be able to manually pan the camera\n\n\nUse Drag Pan\n: Pan the camera by dragging the \u2018world\u2019\n\n\nDrag Pan Speed\n: The speed at which to pan the camera\n\n\nDraggable Area\n: A normalized screen space area where the drag is active. Leave to default to use the whole screen\n\n\nUse Edges Pan\n: Pan the camera by moving the mouse to the edges of the screen (Desktop only)\n\n\nEdges Pan Speed\n: The speed at which the camera will move when the mouse reaches the edges of the screen\n\n\nHorizontal Pan Edges\n: If the mouse pointer goes beyond this edge the camera will start moving horizontally\n\n\nVertical Pan Edges\n: If the mouse pointer goes beyond this edge the camera will start moving vertically\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Pan And Zoom\n\n\nOverview\n\n\nPerfect for RTS\u2019s or any other kind of game where the user has control over the camera, the PanAndZoom extension brings you a wide range of options for manually moving and zooming the camera. Please notice that when using this extension it is advised to not have any camera targets so the camera knows what to follow. If needed, you can always disable the extension temporarily and add/remove the targets at run-time.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nAllow Zoom\n: If enabled, the user will be able to manually zoom the camera\n\n\nMouse Zoom Speed\n: The speed at which to zoom when using the mouse wheel (Desktop Only)\n\n\nPinch Zoom Speed\n: The speed at which to zoom when using the pinch gesture (Mobile Only)\n\n\nZoom Smoothness\n: The smoothness of the zoom\n\n\nMax Zoom In Amount\n: Represents the maximum amount the camera should zoom in\n\n\nMax Zoom Out Amount\n: Represents the maximum amount the camera should zoom out\n\n\nZoom To Input Center\n: If enabled, the camera will zoom to the current input position (mouse or touch). If disabled, the camera will zoom to its center\n\n\nAllow Pan\n: If enabled, the user will be able to manually pan the camera\n\n\nUse Drag Pan\n: Pan the camera by dragging the \u2018world\u2019\n\n\nDrag Pan Speed\n: The speed at which to pan the camera\n\n\nDraggable Area\n: A normalized screen space area where the drag is active. Leave to default to use the whole screen\n\n\nUse Edges Pan\n: Pan the camera by moving the mouse to the edges of the screen (Desktop only)\n\n\nEdges Pan Speed\n: The speed at which the camera will move when the mouse reaches the edges of the screen\n\n\nHorizontal Pan Edges\n: If the mouse pointer goes beyond this edge the camera will start moving horizontally\n\n\nVertical Pan Edges\n: If the mouse pointer goes beyond this edge the camera will start moving vertically", 
             "title": "Extension - Pan And Zoom"
         }, 
         {
@@ -471,18 +411,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_pan_and_zoom/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_pan_and_zoom/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_parallax/", 
-            "text": "Parallax\n\n\nOverview\n\n\nThe Parallax extension gives ProCamera2D the ability to create the popular 2D effect. It\u2019s achieved by having a camera per each parallax layer. Each layer camera only renders the elements contained in the correspondent Culling Mask. These cameras then move at different speeds to create the parallax effect.\nUsing the parallax component editor you can add, remove and sort layers. The editor will take care of creating and destroying the cameras as needed and also adjust each camera rendering settings.\n\n\nConsiderations\n\n\n\n\nThe layers should be ordered from back to front. Use the handles on the left to move them.\n\n\nThe layers speed should be ascending. i.e a back layer should have a lower speed than the one in front.\n\n\nLayers with a speed lower than 1 means the layer elements will be rendered behind the Main Camera elements. Layers with a speed higher than 1 means the layer elements will be rendered in front of the Main Camera elements.\n\n\nThe Culling Mask of each layer should be unique to avoid drawing the same elements on multiple cameras. The same applies to the Culling Mask of the Main Camera which you have to manually set.\n\n\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nParallax layers list\n: Shows all parallax layers\n\n\nParallax X\n: If enabled the camera will have parallax movement in the horizontal direction\n\n\nParallax Y\n: If enabled the camera will have parallax movement in the vertical direction\n\n\nReset Offset\n: This button resets the offset position to the current camera position used to calculate the parallax amount\n\n\n\n\nParallax Layer Parameters\n:\n\n\n\n\nCamera\n: The camera used to render this layer. The camera should be automatically created when adding a new parallax layer and this field should also be automatically populated. You don\u2019t need to edit the camera settings manually, the editor will take care of that for you\n\n\nSpeed\n: Represents the speed at which this layer should move in comparison to the main camera. A speed below 1 means the layer elements will be rendered behind the Main Camera elements. A speed higher than 1 means the layer elements will be rendered in front of the Main Camera elements\n\n\nCulling Mask\n: Represents the (Unity) layers that the layer camera should render\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Parallax\n\n\nOverview\n\n\nThe Parallax extension gives ProCamera2D the ability to create the popular 2D effect. It\u2019s achieved by having a camera per each parallax layer. Each layer camera only renders the elements contained in the correspondent Culling Mask. These cameras then move at different speeds to create the parallax effect.\nUsing the parallax component editor you can add, remove and sort layers. The editor will take care of creating and destroying the cameras as needed and also adjust each camera rendering settings.\n\n\nConsiderations\n\n\n\n\nThe layers should be ordered from back to front. Use the handles on the left to move them.\n\n\nThe layers speed should be ascending. i.e a back layer should have a lower speed than the one in front.\n\n\nLayers with a speed lower than 1 means the layer elements will be rendered behind the Main Camera elements. Layers with a speed higher than 1 means the layer elements will be rendered in front of the Main Camera elements.\n\n\nThe Culling Mask of each layer should be unique to avoid drawing the same elements on multiple cameras. The same applies to the Culling Mask of the Main Camera which you have to manually set.\n\n\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nParallax layers list\n: Shows all parallax layers\n\n\nParallax X\n: If enabled the camera will have parallax movement in the horizontal direction\n\n\nParallax Y\n: If enabled the camera will have parallax movement in the vertical direction\n\n\nReset Offset\n: This button resets the offset position to the current camera position used to calculate the parallax amount\n\n\n\n\nParallax Layer Parameters\n:\n\n\n\n\nCamera\n: The camera used to render this layer. The camera should be automatically created when adding a new parallax layer and this field should also be automatically populated. You don\u2019t need to edit the camera settings manually, the editor will take care of that for you\n\n\nSpeed\n: Represents the speed at which this layer should move in comparison to the main camera. A speed below 1 means the layer elements will be rendered behind the Main Camera elements. A speed higher than 1 means the layer elements will be rendered in front of the Main Camera elements\n\n\nCulling Mask\n: Represents the (Unity) layers that the layer camera should render", 
             "title": "Extension - Parallax"
         }, 
         {
@@ -506,18 +436,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_parallax/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_parallax/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_pixel_perfect/", 
-            "text": "Pixel Perfect\n\n\nOverview\n\n\nThe Pixel Perfect extension makes sure your pixel-art sprites are always displayed as crisp as possible. If you\u2019re doing a game with pixel-art you\u2019ll probably want to use this extension.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nPixels per Unit\n: How many pixels in your sprite should correspond to one unit in the world\n\n\nViewport Auto-Scale\n:\n\n\nNone\n: The camera won't automatically scale\n\n\nFloor\n: The camera will automatically calculate the best scale across all resolutions based on the game viewport, using the floor method\n\n\nCeil\n: The camera will automatically calculate the best scale across all resolutions based on the game viewport, using the ceil method\n\n\nRound\n: The camera will automatically calculate the best scale across all resolutions based on the game viewport, using the round method\n\n\n\n\n\n\nGame Viewport (pixels)\n: Set it that if the screen was of this size, each pixel on the screen would correspond to a pixel on your art. This should correspond to your design time resolution of your assets\n\n\nZoom\n: The zoom level of the camera\n\n\nSnap Movement to Grid\n: If enabled, the camera and the sprites will snap to the grid. Might create some stuttering on your moving objects, especially if you\u2019re using a large grid. Good for retro-looking games but might look weird on most cases\n\n\nDraw Grid\n: If enabled, ProCamera2D will draw a grid representing your \u201cpixel\u201d size. It will only be visible if the grid step is large enough\n\n\n\n\nPixel Perfect Sprite Editor\n\n\nBesides enabling the Pixel Perfect extension, you also need to add the \nProCamera2DPixelPerfectSprite\n component to all the sprites that you want to assure are pixel-perfect.\n\n\n\n\nParameters\n:\n\n\n\n\nIs A Moving Object\n: If enabled, the object position will be aligned to pixel perfect every frame. \nTo improve performance, enable only if the object (or its parent) move\n\n\nUse Parent Movement\n: Enable if you\u2019re moving the parent of this sprite instead of the sprite itself\n\n\nLocal Position\n: If you\u2019re using the parent movement, you have to set this sprite local position using this value\n\n\nSprite Scale\n: The scale of this sprite. A scale of 0 means that ProCamera2D won\u2019t automatically resize this sprite to it\u2019s pixel-perfect size (but it will still align it to the pixel grid)\n\n\n\n\nConsiderations\n\n\nTo achieve pixel perfect results you should also, on your render settings:\n\n\n\n\nTurn off anisotropic filtering\n\n\nTurn off anti aliasing\n\n\n\n\nAnd on your sprites:\n\n\n\n\nEnsure you are using a lossless compression e.g. True Color\n\n\nTurn off mipmapping\n\n\nUse Point sampling\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Pixel Perfect\n\n\nOverview\n\n\nThe Pixel Perfect extension makes sure your pixel-art sprites are always displayed as crisp as possible. If you\u2019re doing a game with pixel-art you\u2019ll probably want to use this extension.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nPixels per Unit\n: How many pixels in your sprite should correspond to one unit in the world\n\n\nViewport Auto-Scale\n:\n\n\nNone\n: The camera won't automatically scale\n\n\nFloor\n: The camera will automatically calculate the best scale across all resolutions based on the game viewport, using the floor method\n\n\nCeil\n: The camera will automatically calculate the best scale across all resolutions based on the game viewport, using the ceil method\n\n\nRound\n: The camera will automatically calculate the best scale across all resolutions based on the game viewport, using the round method\n\n\n\n\n\n\nGame Viewport (pixels)\n: Set it that if the screen was of this size, each pixel on the screen would correspond to a pixel on your art. This should correspond to your design time resolution of your assets\n\n\nZoom\n: The zoom level of the camera\n\n\nSnap Movement to Grid\n: If enabled, the camera and the sprites will snap to the grid. Might create some stuttering on your moving objects, especially if you\u2019re using a large grid. Good for retro-looking games but might look weird on most cases\n\n\nDraw Grid\n: If enabled, ProCamera2D will draw a grid representing your \u201cpixel\u201d size. It will only be visible if the grid step is large enough\n\n\n\n\nPixel Perfect Sprite Editor\n\n\nBesides enabling the Pixel Perfect extension, you also need to add the \nProCamera2DPixelPerfectSprite\n component to all the sprites that you want to assure are pixel-perfect.\n\n\n\n\nParameters\n:\n\n\n\n\nIs A Moving Object\n: If enabled, the object position will be aligned to pixel perfect every frame. \nTo improve performance, enable only if the object (or its parent) move\n\n\nUse Parent Movement\n: Enable if you\u2019re moving the parent of this sprite instead of the sprite itself\n\n\nLocal Position\n: If you\u2019re using the parent movement, you have to set this sprite local position using this value\n\n\nSprite Scale\n: The scale of this sprite. A scale of 0 means that ProCamera2D won\u2019t automatically resize this sprite to it\u2019s pixel-perfect size (but it will still align it to the pixel grid)\n\n\n\n\nConsiderations\n\n\nTo achieve pixel perfect results you should also, on your render settings:\n\n\n\n\nTurn off anisotropic filtering\n\n\nTurn off anti aliasing\n\n\n\n\nAnd on your sprites:\n\n\n\n\nEnsure you are using a lossless compression e.g. True Color\n\n\nTurn off mipmapping\n\n\nUse Point sampling", 
             "title": "Extension - Pixel Perfect"
         }, 
         {
@@ -546,18 +466,8 @@
             "title": "Considerations"
         }, 
         {
-            "location": "/user-guide/extension_pixel_perfect/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_pixel_perfect/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_pointer_influence/", 
-            "text": "Pointer Influence\n\n\nOverview\n\n\nThe Pointer Influence extension is nothing more than an influence on the camera that points from the center of the camera to the user pointer (mouse or finger depending on the platform). You can control how much influence each axis has on the camera.\nThis is the simplest extension and it\u2019s a great start to learn how to make your own ProCamera2D extensions. If for example your game uses a controller, it should be very straightforward to adapt the existing code. So feel free to dig in and change it to fit your needs.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nMax Horizontal Influence\n: How much should the camera be influenced by the horizontal pointer position\n\n\nMax Vertical Influence\n: How much should the camera be influenced by the vertical pointer position\n\n\nInfluence Smoothness\n (\n=0): Represents how smooth the pointer influence should be. The lower the number the quickest the pointer influence moves\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Pointer Influence\n\n\nOverview\n\n\nThe Pointer Influence extension is nothing more than an influence on the camera that points from the center of the camera to the user pointer (mouse or finger depending on the platform). You can control how much influence each axis has on the camera.\nThis is the simplest extension and it\u2019s a great start to learn how to make your own ProCamera2D extensions. If for example your game uses a controller, it should be very straightforward to adapt the existing code. So feel free to dig in and change it to fit your needs.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nMax Horizontal Influence\n: How much should the camera be influenced by the horizontal pointer position\n\n\nMax Vertical Influence\n: How much should the camera be influenced by the vertical pointer position\n\n\nInfluence Smoothness\n (\n=0): Represents how smooth the pointer influence should be. The lower the number the quickest the pointer influence moves", 
             "title": "Extension - Pointer Influence"
         }, 
         {
@@ -576,18 +486,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_pointer_influence/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_pointer_influence/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_rails/", 
-            "text": "Rails\n\n\nOverview\n\n\nThe Rails extension allows you to define a path that your camera will follow according to your targets position. It\u2019s great for situations where you need that extra control over the camera position but still want the player to dictate its position.\nOne key aspect to understand is that what you\u2019re actually limiting to the path is a target and not the camera itself. This means that you need to add your targets to the Rails extension editor and remove them from the normal ProCamera2D camera targets list.\n\n\nCreate nodes\n: Click on the empty squares in between the other nodes.\n\nRemove nodes\n: Hold down \nAlt\n and click an existing node to remove it.\n\nSnapping nodes\n: Hold down \nCtrl\n (\nCommand\n on Mac) and move the node. To adjust the snap value go to \nUnity \n Preferences \n ProCamera2D \n Rails Snapping\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nCamera Targets\n: The targets which you want to keep their positions limited to the path. Remember, you probably want to remove them from the normal ProCamera2D targets list\n\n\nFollow Mode\n: Depending on the direction your targets move you\u2019ll want to experiment what works best for you. On an horizontal platformer you might want to choose HorizontalAxis\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Rails\n\n\nOverview\n\n\nThe Rails extension allows you to define a path that your camera will follow according to your targets position. It\u2019s great for situations where you need that extra control over the camera position but still want the player to dictate its position.\nOne key aspect to understand is that what you\u2019re actually limiting to the path is a target and not the camera itself. This means that you need to add your targets to the Rails extension editor and remove them from the normal ProCamera2D camera targets list.\n\n\nCreate nodes\n: Click on the empty squares in between the other nodes.\n\nRemove nodes\n: Hold down \nAlt\n and click an existing node to remove it.\n\nSnapping nodes\n: Hold down \nCtrl\n (\nCommand\n on Mac) and move the node. To adjust the snap value go to \nUnity \n Preferences \n ProCamera2D \n Rails Snapping\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nCamera Targets\n: The targets which you want to keep their positions limited to the path. Remember, you probably want to remove them from the normal ProCamera2D targets list\n\n\nFollow Mode\n: Depending on the direction your targets move you\u2019ll want to experiment what works best for you. On an horizontal platformer you might want to choose HorizontalAxis", 
             "title": "Extension - Rails"
         }, 
         {
@@ -606,18 +506,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_rails/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_rails/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_repeater/", 
-            "text": "Repeater\n\n\nOverview\n\n\nThe Repeater extension allows you to take any GameObject and repeat it as much as needed to cover the whole screen horizontally, vertically or both. Meaning you can achieve any kind of infinite background effortlessly. Just choose what object you want to repeat, define its bottom-left position and its size and you\u2019re done.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nObject To Repeat\n: This is the object that you want to repeat. It may be a prefab or not\n\n\nObject Size\n: The size of the object to repeat\n\n\nObject Bottom Left\n: The bottom left position of your object in relation to it\u2019s pivot. Check the guidelines to confirm it\u2019s well placed\n\n\nObject On Stage\n: Mark as selected if your original object to repeat is already placed on the scene\n\n\nRepeat Horizontal\n: If enabled, the object will be repeated horizontally\n\n\nRepeat Vertical\n: If enabled, the object will be repeated vertically\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Repeater\n\n\nOverview\n\n\nThe Repeater extension allows you to take any GameObject and repeat it as much as needed to cover the whole screen horizontally, vertically or both. Meaning you can achieve any kind of infinite background effortlessly. Just choose what object you want to repeat, define its bottom-left position and its size and you\u2019re done.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nObject To Repeat\n: This is the object that you want to repeat. It may be a prefab or not\n\n\nObject Size\n: The size of the object to repeat\n\n\nObject Bottom Left\n: The bottom left position of your object in relation to it\u2019s pivot. Check the guidelines to confirm it\u2019s well placed\n\n\nObject On Stage\n: Mark as selected if your original object to repeat is already placed on the scene\n\n\nRepeat Horizontal\n: If enabled, the object will be repeated horizontally\n\n\nRepeat Vertical\n: If enabled, the object will be repeated vertically", 
             "title": "Extension - Repeater"
         }, 
         {
@@ -636,18 +526,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_repeater/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_repeater/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_shake/", 
-            "text": "Shake\n\n\nOverview\n\n\nThe Shake extension, like you probably have guessed, allows you create all kind of different camera shake effects.\nThe shake extension editor exists mostly to allow you to test different parameter values, create presets and see what the result is during runtime by pressing the \u201cShake!\u201d button. \n\n\nMethods\n\n\nFor actual implementation of a shake on your game you can use the methods:\n\n\nShake(float duration, Vector2 strength, int vibrato, float randomness, float initialAngle, Vector3 rotation, float smoothness)\n\n\n\n\nOr, if you simply want to use one of your presets:\n\n\nShakeUsingPreset(string presetName)\n\n\n\n\nShakeUsingPreset(int presetIndex)\n\n\n\n\nAnd if you want to stop all current shakes:\n\n\nStopShaking()\n\n\n\n\nThis extension provides a static instance so it\u2019s easier to call its methods. As an example:\n\n\nProCamera2DShake.Instance.Shake();\n\n\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nStrength\n: The shake strength on each axis\n\n\nDuration\n (\n0): The duration of the shake\n\n\nVibrato\n: Indicates how much will the shake vibrate\n\n\nSmoothness\n: The smoothness of the shake. Lower numbers provide more aggressive shakes\n\n\nRandomness\n: Indicates how much random the shake will be\n\n\nUse Random Initial Angle\n: If enabled, the initial shaking angle will be random\n\n\nRotation\n: The maximum rotation the camera will reach\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Shake\n\n\nOverview\n\n\nThe Shake extension, like you probably have guessed, allows you create all kind of different camera shake effects.\nThe shake extension editor exists mostly to allow you to test different parameter values, create presets and see what the result is during runtime by pressing the \u201cShake!\u201d button. \n\n\nMethods\n\n\nFor actual implementation of a shake on your game you can use the methods:\n\n\nShake(float duration, Vector2 strength, int vibrato, float randomness, float initialAngle, Vector3 rotation, float smoothness)\n\n\n\n\nOr, if you simply want to use one of your presets:\n\n\nShakeUsingPreset(string presetName)\n\n\n\n\nShakeUsingPreset(int presetIndex)\n\n\n\n\nAnd if you want to stop all current shakes:\n\n\nStopShaking()\n\n\n\n\nThis extension provides a static instance so it\u2019s easier to call its methods. As an example:\n\n\nProCamera2DShake.Instance.Shake();\n\n\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nStrength\n: The shake strength on each axis\n\n\nDuration\n (\n0): The duration of the shake\n\n\nVibrato\n: Indicates how much will the shake vibrate\n\n\nSmoothness\n: The smoothness of the shake. Lower numbers provide more aggressive shakes\n\n\nRandomness\n: Indicates how much random the shake will be\n\n\nUse Random Initial Angle\n: If enabled, the initial shaking angle will be random\n\n\nRotation\n: The maximum rotation the camera will reach", 
             "title": "Extension - Shake"
         }, 
         {
@@ -671,18 +551,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_shake/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_shake/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_speed_based_zoom/", 
-            "text": "Speed Based Zoom\n\n\nOverview\n\n\nThe Speed Based Zoom extension automatically zooms in and out based on your targets speed. This can be useful, for example, on a racing game where the camera would zoom out as the car accelerates and zoom in when it stops.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nSpeed For Zoom Out\n: The speed at which the camera will reach it\u2019s max zoom out\n\n\nSpeed For Zoom In\n: Below this speed the camera zooms in. Above this speed the camera will start zooming out\n\n\nZoom In Smoothness\n (\n=0): Represents how smooth the zoom in of the camera should be. The lower the number the quickest the zoom is\n\n\nZoom Out Smoothness\n (\n=0):  Represents how smooth the zoom out of the camera should be. The lower the number the quickest the zoom is\n\n\nMax Zoom In Amount\n (\n=1): Represents the maximum amount the camera should zoom in when the camera speed is below SpeedForZoomIn\n\n\nMax Zoom Out Amount\n (\n=1): Represents the maximum amount the camera should zoom out when the camera speed is equal to SpeedForZoomOut\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Speed Based Zoom\n\n\nOverview\n\n\nThe Speed Based Zoom extension automatically zooms in and out based on your targets speed. This can be useful, for example, on a racing game where the camera would zoom out as the car accelerates and zoom in when it stops.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nSpeed For Zoom Out\n: The speed at which the camera will reach it\u2019s max zoom out\n\n\nSpeed For Zoom In\n: Below this speed the camera zooms in. Above this speed the camera will start zooming out\n\n\nZoom In Smoothness\n (\n=0): Represents how smooth the zoom in of the camera should be. The lower the number the quickest the zoom is\n\n\nZoom Out Smoothness\n (\n=0):  Represents how smooth the zoom out of the camera should be. The lower the number the quickest the zoom is\n\n\nMax Zoom In Amount\n (\n=1): Represents the maximum amount the camera should zoom in when the camera speed is below SpeedForZoomIn\n\n\nMax Zoom Out Amount\n (\n=1): Represents the maximum amount the camera should zoom out when the camera speed is equal to SpeedForZoomOut", 
             "title": "Extension - Speed Based Zoom"
         }, 
         {
@@ -701,18 +571,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_speed_based_zoom/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_speed_based_zoom/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_transitions_fx/", 
-            "text": "Transitions FX\n\n\nOverview\n\n\nThe Transitions FX extension allows you to create in and out \u201cappear\u201d animations for your camera. This is useful for entering and exiting scenes with a cool and smooth transition. The transitions are made with shaders and more will be added soon.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nTransition FX (Enter/Exit)\n: The effect we want to use, on the Enter or on the Exit animation. The settings below are related to this choice\n\n\nDuration\n: How long should the animation last\n\n\nDelay\n: How long it takes for the animation to start\n\n\nEase Type\n: The ease type of the animation\n\n\nBackground Color\n: The color that fills the background of the effect\n\n\nDirection\n: The direction of the animation (in case it has one)\n\n\nSide\n: The side of the animation (in case it has one)\n\n\nBlinds\n: The number of blinds (Blinds FX only)\n\n\nStart Scene On Enter State\n: If enabled, the scene will \u201cpre-load\u201d the Enter state once the scene starts. This requires you to manually call the TransitionEnter method to continue the animation\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Transitions FX\n\n\nOverview\n\n\nThe Transitions FX extension allows you to create in and out \u201cappear\u201d animations for your camera. This is useful for entering and exiting scenes with a cool and smooth transition. The transitions are made with shaders and more will be added soon.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nTransition FX (Enter/Exit)\n: The effect we want to use, on the Enter or on the Exit animation. The settings below are related to this choice\n\n\nDuration\n: How long should the animation last\n\n\nDelay\n: How long it takes for the animation to start\n\n\nEase Type\n: The ease type of the animation\n\n\nBackground Color\n: The color that fills the background of the effect\n\n\nDirection\n: The direction of the animation (in case it has one)\n\n\nSide\n: The side of the animation (in case it has one)\n\n\nBlinds\n: The number of blinds (Blinds FX only)\n\n\nStart Scene On Enter State\n: If enabled, the scene will \u201cpre-load\u201d the Enter state once the scene starts. This requires you to manually call the TransitionEnter method to continue the animation", 
             "title": "Extension - Transitions FX"
         }, 
         {
@@ -731,18 +591,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_transitions_fx/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_transitions_fx/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/extension_zoom_to_fit/", 
-            "text": "Zoom To Fit\n\n\nOverview\n\n\nThe Zoom-To-Fit extension can be used if you\u2019re following multiple targets and they\u2019re moving in different directions. This extension will automatically zoom in/out to make sure the targets are visible at all times.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nZoom Out Border\n (0 \u2013 1): The point (in normalised viewport space) at which if any target is beyond the camera will zoom-out to fit it back in\n\n\nZoom In Border\n (0 \u2013 1): The point (in normalised viewport space) at which if all targets are inside the camera will zoom-in\n\n\nZoom In Smoothness\n (\n=0): Represents how smooth the zoom in of the camera should be. The lower the number the quickest the zoom is\n\n\nZoom Out Smoothness\n (\n=0): Represents how smooth the zoom out of the camera should be. The lower the number the quickest the zoom is\n\n\nMax Zoom In Amount\n (\n=1): Represents the maximum amount the camera should zoom in\n\n\nMax Zoom Out Amount\n (\n=1): Represents the maximum amount the camera should zoom out\n\n\nDisable When One Target\n: Disable the zooming in/out when the camera only has one target\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Zoom To Fit\n\n\nOverview\n\n\nThe Zoom-To-Fit extension can be used if you\u2019re following multiple targets and they\u2019re moving in different directions. This extension will automatically zoom in/out to make sure the targets are visible at all times.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nZoom Out Border\n (0 \u2013 1): The point (in normalised viewport space) at which if any target is beyond the camera will zoom-out to fit it back in\n\n\nZoom In Border\n (0 \u2013 1): The point (in normalised viewport space) at which if all targets are inside the camera will zoom-in\n\n\nZoom In Smoothness\n (\n=0): Represents how smooth the zoom in of the camera should be. The lower the number the quickest the zoom is\n\n\nZoom Out Smoothness\n (\n=0): Represents how smooth the zoom out of the camera should be. The lower the number the quickest the zoom is\n\n\nMax Zoom In Amount\n (\n=1): Represents the maximum amount the camera should zoom in\n\n\nMax Zoom Out Amount\n (\n=1): Represents the maximum amount the camera should zoom out\n\n\nDisable When One Target\n: Disable the zooming in/out when the camera only has one target", 
             "title": "Extension - Zoom To Fit"
         }, 
         {
@@ -761,18 +611,8 @@
             "title": "Editor"
         }, 
         {
-            "location": "/user-guide/extension_zoom_to_fit/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_zoom_to_fit/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/trigger_boundaries/", 
-            "text": "Trigger Boundaries\n\n\nOverview\n\n\nThe Boundaries Trigger is used to change the camera numeric boundaries during gameplay. Once the camera enters the trigger shape (either a circle or a rectangle) the camera transitions to the newly defined boundaries.\nThis is useful in various situations but most commonly can be used to create room constrained cameras that switch when the player passes a door. A common usage is also on platformers where the camera gains a new bottom boundary depending on which platform the player is on.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nUpdate Interval\n (\n0): For performance reasons the trigger collision is only tested at a fixed interval. This value represents that interval. Adjust it to fit your needs\n\n\nTrigger Shape\n: Either a circle or a rectangle. You can scale it like you do any other GameObject\n\n\nAre Boundaries Relative\n: If enabled, the boundaries are relative to the position of the trigger. If disabled, the boundaries are world positions\n\n\nUse Top Boundary\n: The value of the top boundary\n\n\nUse Bottom Boundary\n: The value of the bottom boundary\n\n\nUse Left Boundary\n: The value of the left boundary\n\n\nUse Right Boundary\n: The value of the right boundary\n\n\nTransition Duration\n: How long it takes to change to the new boundaries\n\n\nTransition Ease Type\n: The animation type of the boundaries transition\n\n\nUse Targets Mid Point\n: If enabled, the trigger will use the camera targets mid point to know when to activate. If not, you can pass it a GameObject reference that the trigger will use instead\n\n\nChange Zoom\n: If enabled, the trigger will also change camera zoom\n\n\nZoom Amount\n: How much should the camera zoom once it enters the trigger\n\n\nZoom Smoothness\n: The smoothness of the zoom transition\n\n\n\n\n\n\nSet As Starting Boundaries\n: If enabled, the camera will use these boundaries at start\n\n\n\n\nScene Gizmo\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Trigger Boundaries\n\n\nOverview\n\n\nThe Boundaries Trigger is used to change the camera numeric boundaries during gameplay. Once the camera enters the trigger shape (either a circle or a rectangle) the camera transitions to the newly defined boundaries.\nThis is useful in various situations but most commonly can be used to create room constrained cameras that switch when the player passes a door. A common usage is also on platformers where the camera gains a new bottom boundary depending on which platform the player is on.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nUpdate Interval\n (\n0): For performance reasons the trigger collision is only tested at a fixed interval. This value represents that interval. Adjust it to fit your needs\n\n\nTrigger Shape\n: Either a circle or a rectangle. You can scale it like you do any other GameObject\n\n\nAre Boundaries Relative\n: If enabled, the boundaries are relative to the position of the trigger. If disabled, the boundaries are world positions\n\n\nUse Top Boundary\n: The value of the top boundary\n\n\nUse Bottom Boundary\n: The value of the bottom boundary\n\n\nUse Left Boundary\n: The value of the left boundary\n\n\nUse Right Boundary\n: The value of the right boundary\n\n\nTransition Duration\n: How long it takes to change to the new boundaries\n\n\nTransition Ease Type\n: The animation type of the boundaries transition\n\n\nUse Targets Mid Point\n: If enabled, the trigger will use the camera targets mid point to know when to activate. If not, you can pass it a GameObject reference that the trigger will use instead\n\n\nChange Zoom\n: If enabled, the trigger will also change camera zoom\n\n\nZoom Amount\n: How much should the camera zoom once it enters the trigger\n\n\nZoom Smoothness\n: The smoothness of the zoom transition\n\n\n\n\n\n\nSet As Starting Boundaries\n: If enabled, the camera will use these boundaries at start\n\n\n\n\nScene Gizmo", 
             "title": "Trigger - Boundaries"
         }, 
         {
@@ -796,18 +636,8 @@
             "title": "Scene Gizmo"
         }, 
         {
-            "location": "/user-guide/trigger_boundaries/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/trigger_boundaries/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/trigger_influence/", 
-            "text": "Trigger Influence\n\n\nOverview\n\n\nThe Influence Trigger is used to attract the camera to a certain point. The closer the camera target is to the center of the trigger, the closer it will get to the focus point. Please notice that the focus point doesn\u2019t necessarily need to be in the trigger center. For example, you can put the trigger near a door and the focus point on the key further away. As the player approaches the door the camera will focus on the key.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nUpdate Interval\n (\n0): For performance reasons the trigger collision is only tested at a fixed interval. This value represents that interval. Adjust it to fit your needs\n\n\nTrigger Shape\n: Either a circle or a rectangle. You can scale it like you do any other GameObject\n\n\nFocus Point\n: The transform of the focus point. If left empty the focus point will be the center of the trigger\n\n\nInfluence Smoothness\n (\n0): Represents how smoothly the camera should move towards the focus point. The lower the number the quickest the camera moves\n\n\nExclusive Influence Percentage\n: Represents a percentage of the trigger size that counts as the center of the trigger. Once the camera target enters this area it\u2019s fully centred on the focus point\n\n\nUse Targets Mid Point\n: If enabled, the trigger will use the camera targets mid point to know when to activate. If disabled, you can pass it a GameObject reference that the trigger will use instead\n\n\n\n\nScene Gizmo\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Trigger Influence\n\n\nOverview\n\n\nThe Influence Trigger is used to attract the camera to a certain point. The closer the camera target is to the center of the trigger, the closer it will get to the focus point. Please notice that the focus point doesn\u2019t necessarily need to be in the trigger center. For example, you can put the trigger near a door and the focus point on the key further away. As the player approaches the door the camera will focus on the key.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nUpdate Interval\n (\n0): For performance reasons the trigger collision is only tested at a fixed interval. This value represents that interval. Adjust it to fit your needs\n\n\nTrigger Shape\n: Either a circle or a rectangle. You can scale it like you do any other GameObject\n\n\nFocus Point\n: The transform of the focus point. If left empty the focus point will be the center of the trigger\n\n\nInfluence Smoothness\n (\n0): Represents how smoothly the camera should move towards the focus point. The lower the number the quickest the camera moves\n\n\nExclusive Influence Percentage\n: Represents a percentage of the trigger size that counts as the center of the trigger. Once the camera target enters this area it\u2019s fully centred on the focus point\n\n\nUse Targets Mid Point\n: If enabled, the trigger will use the camera targets mid point to know when to activate. If disabled, you can pass it a GameObject reference that the trigger will use instead\n\n\n\n\nScene Gizmo", 
             "title": "Trigger - Influence"
         }, 
         {
@@ -831,18 +661,8 @@
             "title": "Scene Gizmo"
         }, 
         {
-            "location": "/user-guide/trigger_influence/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/trigger_influence/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/trigger_rails/", 
-            "text": "Trigger Rails\n\n\nOverview\n\n\nThe Rails Trigger allows you to enable or disable the Rails extension dynamically. This way your can, for example, give your camera some freedom during an action scene and bring it back to the tracks afterwards. Experiment and see how can it fit your needs!\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nUpdate Interval\n (\n0): For performance reasons the trigger collision is only tested at a fixed interval. This value represents that interval. Adjust it to fit your needs\n\n\nTrigger Shape\n: Either a circle or a rectangle. You can scale it like you do any other GameObject\n\n\nUse Targets Mid Point\n: If enabled, the trigger will use the camera targets mid point to know when to activate. If disabled, you can pass it a GameObject reference that the trigger will use instead\n\n\nMode\n: Choose if you want this trigger to enable or disable the rails\n\n\nTransition Duration\n: The time it should take to transition from/to rails\n\n\n\n\nScene Gizmo\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Trigger Rails\n\n\nOverview\n\n\nThe Rails Trigger allows you to enable or disable the Rails extension dynamically. This way your can, for example, give your camera some freedom during an action scene and bring it back to the tracks afterwards. Experiment and see how can it fit your needs!\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nUpdate Interval\n (\n0): For performance reasons the trigger collision is only tested at a fixed interval. This value represents that interval. Adjust it to fit your needs\n\n\nTrigger Shape\n: Either a circle or a rectangle. You can scale it like you do any other GameObject\n\n\nUse Targets Mid Point\n: If enabled, the trigger will use the camera targets mid point to know when to activate. If disabled, you can pass it a GameObject reference that the trigger will use instead\n\n\nMode\n: Choose if you want this trigger to enable or disable the rails\n\n\nTransition Duration\n: The time it should take to transition from/to rails\n\n\n\n\nScene Gizmo", 
             "title": "Trigger - Rails"
         }, 
         {
@@ -866,18 +686,8 @@
             "title": "Scene Gizmo"
         }, 
         {
-            "location": "/user-guide/trigger_rails/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/trigger_rails/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
-        }, 
-        {
             "location": "/user-guide/trigger_zoom/", 
-            "text": "Trigger Zoom\n\n\nOverview\n\n\nThe zoom trigger is used to change the camera zoom. The closer the camera target is to the center of the trigger, the closer it will get to the target zoom size. You can use it, for example, to zoom in as the player approaches a boss or zoom out as he reaches a larger area.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nUpdate Interval\n (\n0): For performance reasons the trigger collision is only tested at a fixed interval. This value represents that interval. Adjust it to fit your needs\n\n\nTrigger Shape\n: Either a circle or a rectangle. You can scale it like you do any other GameObject\n\n\nSet Size As Multiplier\n: If enabled, you set target size of the camera as a zoom multiplier of the initial camera size\n\n\nTarget Zoom\n: The max zoom the camera will reach as it enters the trigger area\n\n\nZoom Smoothness\n (\n0): Represents how smoothly the camera zooms in/out. The lower the number the quickest the camera zooms\n\n\nExclusive Influence Percentage\n (\n0): Represents a percentage of the trigger size that counts as the center of the trigger. Once the camera target enters this area it will fully zoom in/out\n\n\nReset Size on Exit\n: If enabled, after exiting the trigger area the camera will reset its size to the start value\n\n\nUse Targets Mid Point\n: If enabled, the trigger will use the camera targets mid point to know when to activate. If not, you can pass it a GameObject reference that the trigger will use instead\n\n\n\n\nScene Gizmo\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Trigger Zoom\n\n\nOverview\n\n\nThe zoom trigger is used to change the camera zoom. The closer the camera target is to the center of the trigger, the closer it will get to the target zoom size. You can use it, for example, to zoom in as the player approaches a boss or zoom out as he reaches a larger area.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nUpdate Interval\n (\n0): For performance reasons the trigger collision is only tested at a fixed interval. This value represents that interval. Adjust it to fit your needs\n\n\nTrigger Shape\n: Either a circle or a rectangle. You can scale it like you do any other GameObject\n\n\nSet Size As Multiplier\n: If enabled, you set target size of the camera as a zoom multiplier of the initial camera size\n\n\nTarget Zoom\n: The max zoom the camera will reach as it enters the trigger area\n\n\nZoom Smoothness\n (\n0): Represents how smoothly the camera zooms in/out. The lower the number the quickest the camera zooms\n\n\nExclusive Influence Percentage\n (\n0): Represents a percentage of the trigger size that counts as the center of the trigger. Once the camera target enters this area it will fully zoom in/out\n\n\nReset Size on Exit\n: If enabled, after exiting the trigger area the camera will reset its size to the start value\n\n\nUse Targets Mid Point\n: If enabled, the trigger will use the camera targets mid point to know when to activate. If not, you can pass it a GameObject reference that the trigger will use instead\n\n\n\n\nScene Gizmo", 
             "title": "Trigger - Zoom"
         }, 
         {
@@ -899,16 +709,6 @@
             "location": "/user-guide/trigger_zoom/#scene-gizmo", 
             "text": "", 
             "title": "Scene Gizmo"
-        }, 
-        {
-            "location": "/user-guide/trigger_zoom/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/trigger_zoom/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
         }, 
         {
             "location": "/showcase/", 
