@@ -252,7 +252,7 @@
         }, 
         {
             "location": "/user-guide/extension_camera_window/", 
-            "text": "Camera Window\n\n\nOverview\n\n\nThe Camera Window extension provides a rectangular region in camera space where targets can move without affecting the camera position. It\u2019s a great extension to use whenever you want to avoid unneccessary movement like, for example, when jumping on platformers.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nWidth\n (0 - 1): The window width\n\n\nHeight\n (0 - 1): The window height\n\n\nX\n: The window horizontal offset\n\n\nY\n: The window vertical offset\n\n\n\n\nDemo\n\n\n{{\n webgl platformer_demo_webgl \n}}\n\n\nUse Cases\n\n\nThis is a list of where this extension might be useful.", 
+            "text": "Camera Window\n\n\nOverview\n\n\nThe Camera Window extension provides a rectangular region in camera space where targets can move without affecting the camera position. It\u2019s a great extension to use whenever you want to avoid unneccessary movement like, for example, when jumping on platformers.\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nWidth\n (0 - 1): The window width\n\n\nHeight\n (0 - 1): The window height\n\n\nX\n: The window horizontal offset\n\n\nY\n: The window vertical offset", 
             "title": "Extension - Camera Window"
         }, 
         {
@@ -269,16 +269,6 @@
             "location": "/user-guide/extension_camera_window/#editor", 
             "text": "Parameters :   Width  (0 - 1): The window width  Height  (0 - 1): The window height  X : The window horizontal offset  Y : The window vertical offset", 
             "title": "Editor"
-        }, 
-        {
-            "location": "/user-guide/extension_camera_window/#demo", 
-            "text": "{{  webgl platformer_demo_webgl  }}", 
-            "title": "Demo"
-        }, 
-        {
-            "location": "/user-guide/extension_camera_window/#use-cases", 
-            "text": "This is a list of where this extension might be useful.", 
-            "title": "Use Cases"
         }, 
         {
             "location": "/user-guide/extension_cinematics/", 
