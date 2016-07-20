@@ -364,11 +364,11 @@ See the user-guide for more information on each trigger.</p>
 <p><img alt="" src="../../images/procamera2d_main_editor_triggers.png" /></p>
 <h2 id="methods">Methods</h2>
 <p>Although you can accomplish almost everything with the ProCamera2D editor, you might feel the need to have a more precise control or even change some parameters during runtime. For that, you start by importing the ProCamera2D namespace, by putting the following code on the top of your class:</p>
-<pre><code class="js">using Com.LuisPedroFonseca.ProCamera2D;
+<pre><code class="c">using Com.LuisPedroFonseca.ProCamera2D;
 </code></pre>
 
 <p>After that, all you have to do is access, from anywhere on your code, the ProCamera2D static instance. In the following example we add a camera target during runtime.</p>
-<pre><code class="js">ProCamera2D.Instance.AddCameraTarget(myTransform);
+<pre><code class="c">ProCamera2D.Instance.AddCameraTarget(myTransform);
 </code></pre>
 
 <p>Through the static ProCamera2D instance you can change any public parameter and access the methods described below.
@@ -376,7 +376,7 @@ Please notice that all extensions and triggers can also be accessed for runtime 
 <hr />
 <h3 id="apply-influence">Apply Influence</h3>
 <p>This method is used by most extensions. What it does is simply applying the given influence to the camera during one frame.</p>
-<pre><code class="js">ApplyInfluence(Vector2 influence)
+<pre><code class="c">ApplyInfluence(Vector2 influence)
 </code></pre>
 
 <p><em>Parameters</em>:</p>
@@ -386,7 +386,7 @@ Please notice that all extensions and triggers can also be accessed for runtime 
 <hr />
 <h3 id="apply-influences-timed">Apply Influences Timed</h3>
 <p>This method is similar to the previous one but here you can pass an array of different influences and their respective durations.</p>
-<pre><code class="js">ApplyInfluencesTimed(Vector2[] influences, float[] durations)
+<pre><code class="c">ApplyInfluencesTimed(Vector2[] influences, float[] durations)
 </code></pre>
 
 <p><em>Parameters</em>:</p>
@@ -397,7 +397,7 @@ Please notice that all extensions and triggers can also be accessed for runtime 
 <hr />
 <h3 id="add-camera-target">Add Camera Target</h3>
 <p>Sometimes you’ll want to add some new camera targets during runtime. That’s where this method comes in.</p>
-<pre><code class="js">AddCameraTarget(Transform targetTransform, float targetInfluenceH = 1f, float targetInfluenceV = 1f, float duration = 0f)
+<pre><code class="c">AddCameraTarget(Transform targetTransform, float targetInfluenceH = 1f, float targetInfluenceV = 1f, float duration = 0f)
 </code></pre>
 
 <p><em>Parameters</em>:</p>
@@ -410,7 +410,7 @@ Please notice that all extensions and triggers can also be accessed for runtime 
 <hr />
 <h3 id="remove-camera-target">Remove Camera Target</h3>
 <p>Not much to tell about this one. Use it to stop following a target.</p>
-<pre><code class="js">RemoveCameraTarget(Transform targetTransform, float duration = 0f)
+<pre><code class="c">RemoveCameraTarget(Transform targetTransform, float duration = 0f)
 </code></pre>
 
 <p><em>Parameters</em>:</p>
@@ -421,7 +421,7 @@ Please notice that all extensions and triggers can also be accessed for runtime 
 <hr />
 <h3 id="get-camera-target">Get Camera Target</h3>
 <p>Gets the corresponding CameraTarget from an object’s transform.</p>
-<pre><code class="js">GetCameraTarget(Transform targetTransform)
+<pre><code class="c">GetCameraTarget(Transform targetTransform)
 </code></pre>
 
 <p><em>Parameters</em>:</p>
@@ -431,7 +431,7 @@ Please notice that all extensions and triggers can also be accessed for runtime 
 <hr />
 <h3 id="adjust-camera-target-influence">Adjust Camera Target Influence</h3>
 <p>If you want to adjust at runtime the influence that a target has you can use this method. Great to adjust a target influence based on its distance or speed for example.</p>
-<pre><code class="js">AdjustCameraTargetInfluence(CameraTarget cameraTarget, float targetInfluenceH, float targetInfluenceV, float duration = 0f)
+<pre><code class="c">AdjustCameraTargetInfluence(CameraTarget cameraTarget, float targetInfluenceH, float targetInfluenceV, float duration = 0f)
 </code></pre>
 
 <p><em>Parameters</em>:</p>
@@ -444,7 +444,7 @@ Please notice that all extensions and triggers can also be accessed for runtime 
 <hr />
 <h3 id="update-screen-size">Update Screen Size</h3>
 <p>If you want to manually adjust at runtime the size of the camera.</p>
-<pre><code class="js">UpdateScreenSize(float newSize, float duration = 0f)
+<pre><code class="c">UpdateScreenSize(float newSize, float duration = 0f)
 </code></pre>
 
 <p><em>Parameters</em>:</p>
@@ -455,7 +455,7 @@ Please notice that all extensions and triggers can also be accessed for runtime 
 <hr />
 <h3 id="move-camera-instantly-to-position">Move Camera Instantly to Position</h3>
 <p>If you want to manually move the camera.</p>
-<pre><code class="js">MoveCameraInstantlyToPosition(Vector2 cameraPos)
+<pre><code class="c">MoveCameraInstantlyToPosition(Vector2 cameraPos)
 </code></pre>
 
 <p><em>Parameters</em>:</p>
@@ -465,7 +465,7 @@ Please notice that all extensions and triggers can also be accessed for runtime 
 <hr />
 <h3 id="reset">Reset</h3>
 <p>This method resets ProCamera2D and its extensions/triggers to their initial state. It’s very useful to use, for example, when your character dies and spawns in a different position on screen.</p>
-<pre><code class="js">Reset(bool centerOnTargets = true)
+<pre><code class="c">Reset(bool centerOnTargets = true)
 </code></pre>
 
 <p><em>Parameters</em>:</p>

@@ -254,22 +254,22 @@
 The shake extension editor exists mostly to allow you to test different parameter values, create presets and see what the result is during runtime by pressing the “Shake!” button. </p>
 <h2 id="methods">Methods</h2>
 <p>For actual implementation of a shake on your game you can use the methods:</p>
-<pre><code class="js">Shake(float duration, Vector2 strength, int vibrato, float randomness, float initialAngle, Vector3 rotation, float smoothness)
+<pre><code class="c">Shake(float duration, Vector2 strength, int vibrato, float randomness, float initialAngle, Vector3 rotation, float smoothness)
 </code></pre>
 
 <p>Or, if you simply want to use one of your presets:</p>
-<pre><code class="js">ShakeUsingPreset(string presetName)
+<pre><code class="c">ShakeUsingPreset(string presetName)
 </code></pre>
 
-<pre><code class="js">ShakeUsingPreset(int presetIndex)
+<pre><code class="c">ShakeUsingPreset(int presetIndex)
 </code></pre>
 
 <p>And if you want to stop all current shakes:</p>
-<pre><code class="js">StopShaking()
+<pre><code class="c">StopShaking()
 </code></pre>
 
 <p>This extension provides a static instance so it’s easier to call its methods. As an example:</p>
-<pre><code class="js">ProCamera2DShake.Instance.Shake();
+<pre><code class="c">ProCamera2DShake.Instance.Shake();
 </code></pre>
 
 <h2 id="editor">Editor</h2>
