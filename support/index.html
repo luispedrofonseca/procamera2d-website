@@ -311,6 +311,22 @@ input:focus, textarea:focus {
 </style>
 
 <script type="text/javascript">
+  function checkSendSuccess()
+  {
+    var success = getURLParameter('success');
+    if(success === true)
+    {
+      alert("Thanks! Your email was successfully sent.");
+    }
+  }
+
+  function getURLParameter(name) 
+  {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+  }
+
+  window.onload = checkSendSuccess;
+
   function validateContactForm() 
   {
     var x = document.forms["contact-form"]["email"].value;
@@ -329,7 +345,7 @@ input:focus, textarea:focus {
     <form name="contact-form" action="https://formspree.io/luispedrofonseca@gmail.com"  onsubmit="return validateContactForm();" method="POST">
 
       <input type="hidden" name="_subject" value="ProCamera2D Support" />
-      <input type="hidden" name="_next" value="/support" />
+      <input type="hidden" name="_next" value="/support?success=true" />
 
       <p class="name">
         <input name="name" type="text" class="feedback-input" id="name" placeholder="Name" />
