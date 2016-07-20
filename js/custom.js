@@ -14,7 +14,7 @@ $(document).ready(function () {
 	$('img[alt="HEADER"]').each(function () 
 	{
 		var id = $(this).attr('src').split('/')[$(this).attr('src').split('/').length - 1];
-		var video = '<p></p><img src="/images/icons/' + id + '@2x.png" width="83" style="float:left;padding-right:10px">';
+		var video = '<p></p><img src="/images/icons/' + id + '.png" width="83" style="float:left;padding-right:10px">';
 		$(this).replaceWith(video);
 	});
 });
