@@ -7,8 +7,10 @@
         {% if page_description %}<meta name="description" content="{{ page_description }}">{% endif %}
         {% if site_author %}<meta name="author" content="{{ site_author }}">{% endif %}
         {% if canonical_url %}<link rel="canonical" href="{{ canonical_url }}">{% endif %}
-        {% if favicon %}<link rel="shortcut icon" href="{{ favicon }}">
-        {% else %}<link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">{% endif %}
+        <!-- {% if favicon %}<link rel="shortcut icon" href="{{ favicon }}">
+        {% else %}<link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">{% endif %} -->
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
 	<title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
 
