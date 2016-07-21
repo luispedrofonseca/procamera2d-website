@@ -245,7 +245,8 @@
 <script type="text/javascript">
     function loadWebGL() 
     {
-        document.getElementById("webgl").innerHTML = '<iframe src= "../platformer-demo-webgl" width="920" height="575" frameborder="0" scrolling="no"></iframe>';
+        var params = window.location.toString().split('?')[1];
+        document.getElementById("webgl").innerHTML = '<iframe src= "../platformer-demo-webgl/' + '?' + params + '" width="920" height="575" frameborder="0" scrolling="no"></iframe>';
     }
 </script>
 
