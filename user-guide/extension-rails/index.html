@@ -249,15 +249,19 @@
 <h2 id="overview">Overview</h2>
 <p>The Rails extension allows you to define a path that your camera will follow according to your targets position. It’s great for situations where you need that extra control over the camera position but still want the player to dictate its position.
 One key aspect to understand is that what you’re actually limiting to the path is a target and not the camera itself. This means that you need to add your targets to the Rails extension editor and remove them from the normal ProCamera2D camera targets list.</p>
-<p><strong>Create nodes</strong>: Click on the empty squares in between the other nodes.
-<strong>Remove nodes</strong>: Hold down <code>Alt</code> and click an existing node to remove it.
-<strong>Snapping nodes</strong>: Hold down <code>Ctrl</code> (<code>Command</code> on Mac) and move the node. To adjust the snap value go to <code>Unity &gt; Preferences &gt; ProCamera2D &gt; Rails Snapping</code></p>
+<p><img alt="Rails" src="../../images/gifs/rails.gif" /></p>
 <h2 id="editor">Editor</h2>
 <p><img alt="" src="../../images/rails_editor.png" /></p>
 <p><em>Parameters</em>:</p>
 <ul>
 <li><code>Camera Targets</code>: The targets which you want to keep their positions limited to the path. Remember, you probably want to remove them from the normal ProCamera2D targets list</li>
 <li><code>Follow Mode</code>: Depending on the direction your targets move you’ll want to experiment what works best for you. On an horizontal platformer you might want to choose HorizontalAxis</li>
+</ul>
+<p><em>Usage</em>:</p>
+<ul>
+<li>Create nodes: Click on the empty squares in between the other nodes.</li>
+<li>Remove nodes: Hold down <code>Alt</code> and click an existing node to remove it.</li>
+<li>Snapping nodes: Hold down <code>Ctrl</code> (<code>Command</code> on Mac) and move the node. To adjust the snap value go to <em>Unity &gt; Preferences &gt; ProCamera2D &gt; Rails Snapping</em></li>
 </ul></div>
             
         </div>
