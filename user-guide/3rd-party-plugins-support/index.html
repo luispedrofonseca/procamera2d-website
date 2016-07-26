@@ -15,7 +15,7 @@
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
 
-	<title>Extension - Forward Focus - ProCamera2D - Unity Camera Plugin</title>
+	<title>3rd Party Plugins Support - ProCamera2D - Unity Camera Plugin</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -108,8 +108,8 @@
                             <a href="../extension-cinematics/">Extension - Cinematics</a>
                         </li>
                     
-                        <li class="active">
-                            <a href="./">Extension - Forward Focus</a>
+                        <li >
+                            <a href="../extension-forward-focus/">Extension - Forward Focus</a>
                         </li>
                     
                         <li >
@@ -188,8 +188,8 @@
                             <a href="../custom-extensions-triggers/">Custom Extensions and Triggers</a>
                         </li>
                     
-                        <li >
-                            <a href="../3rd-party-plugins-support/">3rd Party Plugins Support</a>
+                        <li class="active">
+                            <a href="./">3rd Party Plugins Support</a>
                         </li>
                     
                     </ul>
@@ -239,37 +239,30 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#forward-focus">Forward Focus</a></li>
+        <li class="main active"><a href="#3rd-party-plugins-support">3rd Party Plugins Support</a></li>
         
     
-        <li class="main "><a href="#overview">Overview</a></li>
+        <li class="main "><a href="#playmaker">PlayMaker</a></li>
         
     
-        <li class="main "><a href="#editor">Editor</a></li>
+        <li class="main "><a href="#2d-toolkit">2D Toolkit</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<p><img alt="HEADER" src="../extension_forward_focus" /></p>
-<h3 id="forward-focus">Forward Focus</h3>
-<h2 id="overview">Overview</h2>
-<p>The Forward Focus extension compensates the targets movement by adding some room in front of them in order to focus on what’s coming ahead. It’s a must-have feature in most 2D action games.</p>
-<p><img alt="Forward Focus" src="../../images/gifs/forward_focus.gif" /></p>
-<h2 id="editor">Editor</h2>
-<p><img alt="" src="../../images/forward_focus_editor.png" /></p>
-<p><em>Parameters</em>:</p>
-<ul>
-<li><code>Progressive</code>: If enabled, the camera will move to the focus position progressively according to the targets speed. If disabled the camera will move directly to the focus position</li>
-<li><code>Speed Multiplier</code> (&gt;= 0): Only available if Progressive field is enabled. This field represents a value by which to multiply the targets speed in case their speed is not sufficient to reach the focus position</li>
-<li><code>Transition Smoothness</code> (&gt;= 0): Represents how smooth the transition of the focus position should be. The lower the number the quickest the transition is</li>
-<li><code>Maintain Influence On Stop</code>:  If enabled, once the target stops moving the forward focus stays on stationary. If disabled it returns to zero on stop</li>
-<li><code>Left Focus</code> (0 - 1): How much should the camera compensate when moving left (in normalised viewport space)</li>
-<li><code>Right Focus</code> (0 - 1): How much should the camera compensate when moving right (in normalised viewport space)</li>
-<li><code>Up Focus</code> (0 - 1): How much should the camera compensate when moving up (in normalised viewport space)</li>
-<li><code>Down Focus</code> (0 - 1): How much should the camera compensate when moving down (in normalised viewport space)</li>
-</ul></div>
+<p><img alt="HEADER" src="../core" /></p>
+<h3 id="3rd-party-plugins-support">3rd Party Plugins Support</h3>
+<h2 id="playmaker">PlayMaker</h2>
+<p>We want to make ProCamera2D the most user-friendly and quickest to use 2D camera solution on the market. Since that fits exactly into PlayMaker moto we knew we had to fully support it. Although ProCamera2D is very non-coder friendly and 99.9% of the features don’t require any coding, there a few that do. For those we created the following custom actions.</p>
+<p><img alt="PlayMaker Actions" src="../../images/playmaker_actions.png" /></p>
+<p>To enable those actions all you have to do is adding <code>PC2D_PLAYMAKER_SUPPORT</code> to your <em>Scripting Define Symbols</em> on your build settings, like shown on the following image. Make sure you have PlayMaker installed before you do it!</p>
+<p><img alt="PlayMaker Support" src="../../images/playmaker_support.png" /></p>
+<h2 id="2d-toolkit">2D Toolkit</h2>
+<p>Although most of ProCamera2D features work out-of-the-box with 2D Toolkit (and its tk2dCamera), there are a few that don’t. Those are all related to the camera size and more specifically to how tk2dCameras handle size adjustments.</p>
+<p>So, in order to fully use ProCamera2D in conjunction with a 2D Toolkit camera, all you have to do is add <code>PC2D_TK2D_SUPPORT</code> to your <em>Scripting Define Symbols</em> on your build settings, like shown on the following image. Make sure you have 2D Toolkit installed before you do it!</p>
+<p><img alt="2D Toolkit Support" src="../../images/tk2d_support.png" /></p></div>
             
         </div>
 

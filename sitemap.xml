@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,13 @@
         
     <url>
      <loc>None/demo-platformer/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/demo-topdownshooter/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -29,133 +29,145 @@
         
     <url>
      <loc>None/user-guide/core/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-camera-window/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-cinematics/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-forward-focus/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-geometry-boundaries/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-limit-distance/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-limit-speed/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-numeric-boundaries/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-pan-and-zoom/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-parallax/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-pixel-perfect/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-pointer-influence/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-rails/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-repeater/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-shake/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-speed-based-zoom/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-transitions-fx/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/extension-zoom-to-fit/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/trigger-boundaries/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/trigger-influence/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/trigger-rails/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/user-guide/trigger-zoom/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/custom-extensions-triggers/</loc>
+     <lastmod>2016-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/user-guide/3rd-party-plugins-support/</loc>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -164,7 +176,7 @@
     
     <url>
      <loc>None/showcase/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -172,7 +184,7 @@
     
     <url>
      <loc>None/about/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -180,7 +192,7 @@
     
     <url>
      <loc>None/support/</loc>
-     <lastmod>2016-07-22</lastmod>
+     <lastmod>2016-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

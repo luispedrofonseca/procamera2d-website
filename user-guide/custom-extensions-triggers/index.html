@@ -15,7 +15,7 @@
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
 
-	<title>Extension - Forward Focus - ProCamera2D - Unity Camera Plugin</title>
+	<title>Custom Extensions and Triggers - ProCamera2D - Unity Camera Plugin</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -108,8 +108,8 @@
                             <a href="../extension-cinematics/">Extension - Cinematics</a>
                         </li>
                     
-                        <li class="active">
-                            <a href="./">Extension - Forward Focus</a>
+                        <li >
+                            <a href="../extension-forward-focus/">Extension - Forward Focus</a>
                         </li>
                     
                         <li >
@@ -184,8 +184,8 @@
                             <a href="../trigger-zoom/">Trigger - Zoom</a>
                         </li>
                     
-                        <li >
-                            <a href="../custom-extensions-triggers/">Custom Extensions and Triggers</a>
+                        <li class="active">
+                            <a href="./">Custom Extensions and Triggers</a>
                         </li>
                     
                         <li >
@@ -239,37 +239,86 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#forward-focus">Forward Focus</a></li>
+        <li class="main active"><a href="#custom-extensions-and-triggers">Custom Extensions and Triggers</a></li>
         
     
         <li class="main "><a href="#overview">Overview</a></li>
         
     
-        <li class="main "><a href="#editor">Editor</a></li>
+        <li class="main "><a href="#custom-extension">Custom Extension</a></li>
+        
+    
+        <li class="main "><a href="#custom-trigger">Custom Trigger</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<p><img alt="HEADER" src="../extension_forward_focus" /></p>
-<h3 id="forward-focus">Forward Focus</h3>
+<p><img alt="HEADER" src="../core" /></p>
+<h3 id="custom-extensions-and-triggers">Custom Extensions and Triggers</h3>
 <h2 id="overview">Overview</h2>
-<p>The Forward Focus extension compensates the targets movement by adding some room in front of them in order to focus on what’s coming ahead. It’s a must-have feature in most 2D action games.</p>
-<p><img alt="Forward Focus" src="../../images/gifs/forward_focus.gif" /></p>
-<h2 id="editor">Editor</h2>
-<p><img alt="" src="../../images/forward_focus_editor.png" /></p>
-<p><em>Parameters</em>:</p>
+<p>Although we tried to cover as many use cases as possible with the wide range of features, extensions and triggers we packed into ProCamera2D, you might reach a time when you need something tailored specifically to your game. Gladly we’ve got you covered! 🙂</p>
+<p>There are 2 primary ways to modify the behaviour of ProCamera2D. You can either do it through Extensions or through Triggers. The only difference between them is that Extensions don’t have a “physical” representation in the game and Triggers do. Therefore, Extensions are components that are usually placed on the same GameObject as the ProCamera2D component (probably your Main Camera) and Triggers are components that are placed on GameObjects that live in the scene.</p>
+<p>When building your own Extension or Trigger there are classes you can extend to make your life easier:</p>
 <ul>
-<li><code>Progressive</code>: If enabled, the camera will move to the focus position progressively according to the targets speed. If disabled the camera will move directly to the focus position</li>
-<li><code>Speed Multiplier</code> (&gt;= 0): Only available if Progressive field is enabled. This field represents a value by which to multiply the targets speed in case their speed is not sufficient to reach the focus position</li>
-<li><code>Transition Smoothness</code> (&gt;= 0): Represents how smooth the transition of the focus position should be. The lower the number the quickest the transition is</li>
-<li><code>Maintain Influence On Stop</code>:  If enabled, once the target stops moving the forward focus stays on stationary. If disabled it returns to zero on stop</li>
-<li><code>Left Focus</code> (0 - 1): How much should the camera compensate when moving left (in normalised viewport space)</li>
-<li><code>Right Focus</code> (0 - 1): How much should the camera compensate when moving right (in normalised viewport space)</li>
-<li><code>Up Focus</code> (0 - 1): How much should the camera compensate when moving up (in normalised viewport space)</li>
-<li><code>Down Focus</code> (0 - 1): How much should the camera compensate when moving down (in normalised viewport space)</li>
-</ul></div>
+<li>
+<p><code>BasePC2D</code>: This class takes care of giving you access of everything you might need to create your extension. Access to the ProCamera2D instance and methods to handle vectors conversion according to the chosen axis.</p>
+</li>
+<li>
+<p><code>BaseTrigger</code>: Also extends BasePC2D but creates a shape (circle or rectangle) that you can use to detect when your camera enters it.</p>
+</li>
+</ul>
+<h2 id="custom-extension">Custom Extension</h2>
+<p>On this example we’re going to create a extension that moves the camera down when the user presses the down arrow, to let him see a little bit further what’s beneath him.</p>
+<pre><code class="c">using UnityEngine;
+using Com.LuisPedroFonseca.ProCamera2D;
+
+public class ExtensionExample : BasePC2D
+{
+    public float ViewDistance = 2f;
+
+    void Update()
+    {
+        if(Input.GetKey(KeyCode.DownArrow))
+        {
+            ProCamera2D.ApplyInfluence(new Vector2(0, -ViewDistance));
+        }
+    }
+}
+</code></pre>
+
+<p>Which results in something like this:</p>
+<p><img alt="Extension example" src="../../images/gifs/extension_example.gif" /></p>
+<h2 id="custom-trigger">Custom Trigger</h2>
+<p>Now we’re going to create a trigger which changes the background color once the camera enters it. Notice the EnteredTrigger and the ExitedTrigger methods which are part of the BaseTrigger class.</p>
+<p>It’s a pretty silly example but the truth is that the triggers that are part of ProCamera2D already cover pretty much every useful cases we could think of. 🙂</p>
+<pre><code class="c">using UnityEngine;
+using Com.LuisPedroFonseca.ProCamera2D;
+
+public class TriggerExample : BaseTrigger
+{
+    public Color EnterColor;
+    public Color ExitColor;
+
+    protected override void EnteredTrigger()
+    {
+        base.EnteredTrigger();
+
+        ProCamera2D.GameCamera.backgroundColor = EnterColor;
+    }
+
+    protected override void ExitedTrigger()
+    {
+        base.ExitedTrigger();
+
+        ProCamera2D.GameCamera.backgroundColor = ExitColor;
+    }
+}
+</code></pre>
+
+<p>Which in turn results in this funny thing:</p>
+<p><img alt="Trigger example" src="../../images/gifs/trigger_example.gif" /></p></div>
             
         </div>
 
