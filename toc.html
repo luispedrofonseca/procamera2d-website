@@ -3,7 +3,7 @@
     {% for toc_item in toc %}
         <li class="main {% if toc_item.active %}active{% endif %}"><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
         {% for toc_item in toc_item.children %}
-            <li><a href="{{ toc_item.url }}" style="padding-left: 30px;font-size: smaller;">{{ toc_item.title }}</a></li>
+            <li><span class="toc-children"><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></span></li>
         {% endfor %}
     {% endfor %}
     </ul>
