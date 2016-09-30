@@ -7,7 +7,7 @@
         
         
         <meta name="author" content="Luís Pedro Fonseca - Unity Developer">
-        <link rel="canonical" href="http://www.procamera2d.com/user-guide/extension-forward-focus/">
+        <link rel="canonical" href="http://www.procamera2d.com/user-guide/extension-rooms/">
 
         <meta property="og:title" content="Pro Camera 2D - Unity Camera Plugin" />
         <meta property="og:description" content="The definitive 2D and 2.5D Unity camera solution! Includes extensions for Pixel-Perfect, Shake, Cinematics, Transitions, Rooms, Pan and Zoom, Boundaries, and much more!" />
@@ -29,7 +29,7 @@
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
 
-	<title>Extension - Forward Focus - Pro Camera 2D - Unity Camera Plugin</title>
+	<title>Extension - Rooms - Pro Camera 2D - Unity Camera Plugin</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -122,8 +122,8 @@
                             <a href="../extension-cinematics/">Extension - Cinematics</a>
                         </li>
                     
-                        <li class="active">
-                            <a href="./">Extension - Forward Focus</a>
+                        <li >
+                            <a href="../extension-forward-focus/">Extension - Forward Focus</a>
                         </li>
                     
                         <li >
@@ -166,8 +166,8 @@
                             <a href="../extension-repeater/">Extension - Repeater</a>
                         </li>
                     
-                        <li >
-                            <a href="../extension-rooms/">Extension - Rooms</a>
+                        <li class="active">
+                            <a href="./">Extension - Rooms</a>
                         </li>
                     
                         <li >
@@ -257,7 +257,7 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#forward-focus">Forward Focus</a></li>
+        <li class="main active"><a href="#rooms">Rooms</a></li>
         
     
         <li class="main "><a href="#overview">Overview</a></li>
@@ -270,23 +270,33 @@
 </div></div>
             <div class="col-md-9" role="main">
 
-<p><img alt="HEADER" src="../extension_forward_focus" /></p>
-<h3 id="forward-focus">Forward Focus</h3>
+<p><img alt="HEADER" src="../extension_rooms" /></p>
+<h3 id="rooms">Rooms</h3>
 <h2 id="overview">Overview</h2>
-<p>The Forward Focus extension compensates the targets movement by adding some room in front of them in order to focus on what’s coming ahead. It’s a must-have feature in most 2D action games.</p>
-<p><img alt="Forward Focus" src="../../images/gifs/forward_focus.gif" /></p>
+<p>The Rooms extension allows you to define rectangular areas within your scene that work as numeric boundaries. Each room can have different sizes and transition settings, resulting in a very wide range with possible configurations.
+With this extension you can easily recreate the old Zelda style linear room transitions, or something more modern and fluid like Limbo.</p>
+<p><img alt="Rooms" src="../../images/gifs/rooms.gif" /></p>
 <h2 id="editor">Editor</h2>
-<p><img alt="" src="../../images/forward_focus_editor.png" /></p>
+<p><img alt="" src="../../images/rooms_editor.png" /></p>
 <p><em>Parameters</em>:</p>
 <ul>
-<li><code>Progressive</code>: If enabled, the camera will move to the focus position progressively according to the targets speed. If disabled the camera will move directly to the focus position</li>
-<li><code>Speed Multiplier</code> (&gt;= 0): Only available if Progressive field is enabled. This field represents a value by which to multiply the targets speed in case their speed is not sufficient to reach the focus position</li>
-<li><code>Transition Smoothness</code> (&gt;= 0): Represents how smooth the transition of the focus position should be. The lower the number the quickest the transition is</li>
-<li><code>Maintain Influence On Stop</code>:  If enabled, once the target stops moving the forward focus stays on stationary. If disabled it returns to zero on stop</li>
-<li><code>Left Focus</code> (0 - 1): How much should the camera compensate when moving left (in normalised viewport space)</li>
-<li><code>Right Focus</code> (0 - 1): How much should the camera compensate when moving right (in normalised viewport space)</li>
-<li><code>Up Focus</code> (0 - 1): How much should the camera compensate when moving up (in normalised viewport space)</li>
-<li><code>Down Focus</code> (0 - 1): How much should the camera compensate when moving down (in normalised viewport space)</li>
+<li><code>Rooms</code>: This is a list of all rooms. You can add and remove them using the buttons on the bottom-right corner</li>
+<li><code>Update Interval</code> (&gt;0): For performance reasons the room detection is only tested at a fixed interval. This value represents that interval. Adjust it to fit your needs</li>
+<li><code>Use Targets Mid Point</code>: If enabled, the extension will use the camera targets mid point to know when to activate. If not, you can pass it a GameObject reference that the extension will use instead</li>
+<li><code>Transition Instantly on Start</code>: If enabled and the camera target is inside a room once the level starts, the extension will instantly transition to that room</li>
+<li><code>Restore on Room Exit</code>: If enabled, the camera will reset to the level start settings once the target is not inside any room</li>
+<li><code>Automatic Room Activation</code>: If enabled, the extension will automatically detect when the camera target is inside a room. If you want more control, disable this option and take care of the detection and activation of the rooms manually, using the extension API</li>
+<li><code>OnStartedTransition</code>: Event that fires once the camera starts transitioning to a new room</li>
+<li><code>OnFinishedTransition</code>: Event that fires once the camera finishes transitioning to a new room</li>
+</ul>
+<p><em>Room Parameters</em>:</p>
+<ul>
+<li><code>Dimensions</code>: This is the Rect that represents the room size and position. Feel free to adjust it manually or use the handles on the Scene View</li>
+<li><code>Ease Type</code>: The animation type of the transition</li>
+<li><code>Duration</code>: How long it takes to change to the new room</li>
+<li><code>Scale To Fit</code>: If enabled, the camera will resize to best fit the room size. Notice that the camera will always resize to fit a room if the room is smaller than the current camera size</li>
+<li><code>Zoom</code>: If enabled, the camera will resize using the scale defined. This value is relative to the initial camera size</li>
+<li><code>Scale</code>: The zoom scale</li>
 </ul></div>
             
         </div>
