@@ -97,18 +97,13 @@
         }, 
         {
             "location": "/demo-topdownshooter/", 
-            "text": "DEMO TOP-DOWN SHOOTER\n\n\nComing soon!\n\n\nIn the meantime feel free to explore the older version of the demo: \nTop-Down Shooter", 
+            "text": "DEMO TOP-DOWN SHOOTER\n\n\n\n\nUse the arrow keys (or WASD) to move.\n\n\nUse the mouse to fire and look around.\n\n\nSwitch camera modes on the top-right button.\n\n\nThis demo is included in the package.\n\n\n\n\n\n    \n\n\n\n\n\n\n    function loadWebGL() \n    {\n        var params = window.location.toString().split('?')[1];\n        document.getElementById(\"webgl\").innerHTML = '<iframe src= \"../topdown-demo-webgl/' + '?' + params + '\" width=\"920\" height=\"575\" frameborder=\"0\" scrolling=\"no\"></iframe>';\n    }\n\n\n\n\n\n\n\n\n\n\nIt might take a few seconds for the demo to load. Please be patient.\n\n\nThis demo runs in WebGL which is only supported by modern browsers.\n\n\nUnity's WebGL performance is degraded in comparison to other platforms.", 
             "title": "Top Down Shooter"
         }, 
         {
             "location": "/demo-topdownshooter/#demo-top-down-shooter", 
-            "text": "", 
+            "text": "Use the arrow keys (or WASD) to move.  Use the mouse to fire and look around.  Switch camera modes on the top-right button.  This demo is included in the package.   \n       \n    function loadWebGL() \n    {\n        var params = window.location.toString().split('?')[1];\n        document.getElementById(\"webgl\").innerHTML = '<iframe src= \"../topdown-demo-webgl/' + '?' + params + '\" width=\"920\" height=\"575\" frameborder=\"0\" scrolling=\"no\"></iframe>';\n    }     It might take a few seconds for the demo to load. Please be patient.  This demo runs in WebGL which is only supported by modern browsers.  Unity's WebGL performance is degraded in comparison to other platforms.", 
             "title": "DEMO TOP-DOWN SHOOTER"
-        }, 
-        {
-            "location": "/demo-topdownshooter/#coming-soon", 
-            "text": "In the meantime feel free to explore the older version of the demo:  Top-Down Shooter", 
-            "title": "Coming soon!"
         }, 
         {
             "location": "/user-guide/core/", 
