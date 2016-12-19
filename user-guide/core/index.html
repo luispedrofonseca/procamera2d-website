@@ -317,6 +317,14 @@
         
             <li><span class="toc-children"><a href="#reset">Reset</a></span></li>
         
+            <li><span class="toc-children"><a href="#reset-movement">Reset Movement</a></span></li>
+        
+            <li><span class="toc-children"><a href="#reset-size">Reset Size</a></span></li>
+        
+            <li><span class="toc-children"><a href="#reset-extensions">Reset Extensions</a></span></li>
+        
+            <li><span class="toc-children"><a href="#center-on-targets">Center On Targets</a></span></li>
+        
     
     </ul>
 </div></div>
@@ -497,14 +505,39 @@ Please notice that all extensions and triggers can also be accessed for runtime 
 </ul>
 <hr />
 <h3 id="reset">Reset</h3>
-<p>This method resets ProCamera2D and its extensions/triggers to their initial state. It’s very useful to use, for example, when your character dies and spawns in a different position on screen.</p>
-<pre><code class="c">Reset(bool centerOnTargets = true)
+<p>Resets the camera movement and size and also all of its extensions to their start values. It’s very useful to use, for example, when your character dies and spawns in a different position on screen.</p>
+<pre><code class="c">Reset(bool centerOnTargets = true, bool resetSize = true, bool resetExtensions = true)
 </code></pre>
 
 <p><em>Parameters</em>:</p>
 <ul>
 <li><code>centerOnTargets</code>: If true (default), the camera will instantly move to your targets position</li>
-</ul></div>
+<li><code>resetSize</code>: If true (default), resets the camera size to the start value</li>
+<li><code>resetExtensions</code>: If true (default), resets all active extensions to their start values</li>
+</ul>
+<hr />
+<h3 id="reset-movement">Reset Movement</h3>
+<p>Cancels any existing camera movement easing. </p>
+<pre><code class="c">ResetMovement()
+</code></pre>
+
+<hr />
+<h3 id="reset-size">Reset Size</h3>
+<p>Resets the camera size to the start value.</p>
+<pre><code class="c">ResetSize()
+</code></pre>
+
+<hr />
+<h3 id="reset-extensions">Reset Extensions</h3>
+<p>Resets all active extensions to their start values. Notice you can manually reset each extension using the "OnReset" method.</p>
+<pre><code class="c">ResetExtensions()
+</code></pre>
+
+<hr />
+<h3 id="center-on-targets">Center On Targets</h3>
+<p>Instantly moves the camera to the targets' position.</p>
+<pre><code class="c">CenterOnTargets()
+</code></pre></div>
             
         </div>
 
