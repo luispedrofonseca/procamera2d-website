@@ -267,7 +267,7 @@
 <h3 id="does-procamera2d-work-with-perspective-cameras">Does ProCamera2D work with perspective cameras?</h3>
 <p>Yes! All features work exactly the same either with a perspective or an orthographic camera. The only exception is the Parallax plugin that only works on orthographic cameras, since that with a perspective camera you automatically get “free parallax”.</p>
 <h2 id="contact">Contact</h2>
-<p>Do you have an issue you want to see resolved, a suggestion or you simply want to know if this is the right plugin for your game? Jump into the <a href="http://forum.unity3d.com/threads/released-procamera2d-the-definitive-2d-camera-solution-for-unity.344436/" target="_blank">Unity forums</a>, <a href="http://www.twitter.com/lpfonseca" target="_blank">tweet us</a> or just fill the form below and we’ll do our best to get back to you ASAP.</p>
+<p>Do you have an issue you want to see resolved, a suggestion or you simply want to know if this is the right plugin for your game? Jump into the <a href="http://forum.unity3d.com/threads/released-procamera2d-the-definitive-2d-camera-solution-for-unity.344436/" target="_blank">Unity forums</a>, <a href="http://www.twitter.com/lpfonseca" target="_blank">tweet me</a> or just fill the form below and I’ll do my best to get back to you ASAP.</p>
 <p>&nbsp;</p>
 <style type="text/css">
 .feedback-input {
@@ -385,7 +385,7 @@ input:focus, textarea:focus {
 
 <div>
   <div>
-    <form name="contact-form" action="https://formspree.io/luispedrofonseca@gmail.com"  onsubmit="return validateContactForm();" method="POST">
+    <form name="contact-form" onsubmit="return validateContactForm();" method="POST">
 
       <input type="hidden" name="_subject" value="ProCamera2D Support" />
       <input type="hidden" name="_next" value="/support?success=true" />
@@ -402,11 +402,19 @@ input:focus, textarea:focus {
         <textarea name="text" class="feedback-input" id="comment" placeholder="Comment"></textarea>
       </p>
 
+      <input type="text" name="_gotcha" style="display:none" />
+
       <div class="submit">
         <input type="submit" value="Send" id="button-blue"/>
         <div class="ease"></div>
       </div>
     </form>
+
+    <script>
+      var contactform =  document.getElementById('contactform');
+      contactform.setAttribute('action', '//formspree.io/' + 'luispedrofonseca' + '@' + 'gmail' + '.' + 'com');
+    </script>
+
   </div></div>
             <div class="col-md-1"></div>
             
