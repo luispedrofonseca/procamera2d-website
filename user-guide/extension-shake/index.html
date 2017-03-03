@@ -262,8 +262,18 @@
     
         <li class="main "><a href="#overview">Overview</a></li>
         
+            <li><span class="toc-children"><a href="#shake-once-example-explosion">Shake once example (explosion)</a></span></li>
+        
+            <li><span class="toc-children"><a href="#constant-shake-example-handheld">Constant shake example (handheld)</a></span></li>
+        
     
         <li class="main "><a href="#editor">Editor</a></li>
+        
+    
+        <li class="main "><a href="#shake-preset-editor">Shake Preset Editor</a></li>
+        
+    
+        <li class="main "><a href="#constant-shake-preset-editor">Constant Shake Preset Editor</a></li>
         
     
         <li class="main "><a href="#methods">Methods</a></li>
@@ -277,19 +287,45 @@
 <h3 id="shake">Shake</h3>
 <h2 id="overview">Overview</h2>
 <p>The Shake extension, like you probably have guessed, allows you create all kind of different camera shake effects.
-The shake extension editor exists mostly to allow you to test different parameter values, create presets and see what the result is during runtime by pressing the “Shake!” button. </p>
+You can create shake effects that are applied once or multiple times, like explosions and gun fire. Or you can create constant shake effects that are enabled during a certain period of time, like a handheld camera effect or a long earthquake.
+The shake editor simply lists all the available presets on the current scene. To create new ones press the "Create ShakePreset" or "Create ConstantShakePreset". They'll be automatically added to the list. You can then select each preset individually and tweak the values.
+All presets live on their own files and all changes are saved even at runtime. This way you can test your shakes during runtime and adjust until you find the perfect values.</p>
+<h4 id="shake-once-example-explosion">Shake once example (explosion)</h4>
 <p><img alt="Shake" src="../../images/gifs/shake.gif" /></p>
+<h4 id="constant-shake-example-handheld">Constant shake example (handheld)</h4>
+<p><img alt="Shake Constant" src="../../images/gifs/shake_constant.gif" /></p>
 <h2 id="editor">Editor</h2>
 <p><img alt="" src="../../images/shake_editor.png" /></p>
 <p><em>Parameters</em>:</p>
 <ul>
+<li><code>Shake Presets</code>: A list of all the loaded shake presets on this scene</li>
+<li><code>Constant Shake Presets</code>: A list of all the loaded constant shake presets on this scene</li>
+</ul>
+<h2 id="shake-preset-editor">Shake Preset Editor</h2>
+<p><img alt="" src="../../images/shake_preset_editor.png" /></p>
+<p><em>Parameters</em>:</p>
+<ul>
 <li><code>Strength</code>: The shake strength on each axis</li>
-<li><code>Duration</code> (&gt;0): The duration of the shake</li>
+<li><code>Duration (&gt;0)</code>: The duration of the shake</li>
 <li><code>Vibrato</code>: Indicates how much will the shake vibrate</li>
 <li><code>Smoothness</code>: The smoothness of the shake. Lower numbers provide more aggressive shakes</li>
-<li><code>Randomness</code>: Indicates how much random the shake will be</li>
+<li><code>Randomness</code>: Indicates how random the shake will be</li>
 <li><code>Use Random Initial Angle</code>: If enabled, the initial shaking angle will be random</li>
 <li><code>Rotation</code>: The maximum rotation the camera will reach</li>
+<li><code>Ignore TimeScale</code>: Uses an unscaled delta time</li>
+</ul>
+<h2 id="constant-shake-preset-editor">Constant Shake Preset Editor</h2>
+<p><img alt="" src="../../images/shake_constant_preset_editor.png" /></p>
+<p><em>Parameters</em>:</p>
+<ul>
+<li><code>Intensity</code>: How fast the camera will move between the different amplitudes. Lower values produce smoother results</li>
+<li><code>Layers</code>: The number of accumalated movements the camera does. Usually one is enough. 3 is recommended for handheld simulation.<ul>
+<li><code>Frequency</code>: How fast the camera moves towards the amplitude</li>
+<li><code>Amplitude Horizontal</code>: The range of horizontal movement</li>
+<li><code>Amplitude Vertical</code>: The range of vertical movement</li>
+<li><code>Amplitude Depth</code>: The range of depth movement</li>
+</ul>
+</li>
 </ul>
 <h2 id="methods">Methods</h2>
 <p>For runtime implementation of a shake on your game you can use the methods:</p>
@@ -297,10 +333,10 @@ The shake extension editor exists mostly to allow you to test different paramete
 </code></pre>
 
 <p>Or, if you simply want to use one of your presets:</p>
-<pre><code class="c">ShakeUsingPreset(string presetName)
+<pre><code class="c">Shake(string presetName)
 </code></pre>
 
-<pre><code class="c">ShakeUsingPreset(int presetIndex)
+<pre><code class="c">Shake(int presetIndex)
 </code></pre>
 
 <p>And if you want to stop all current shakes:</p>
