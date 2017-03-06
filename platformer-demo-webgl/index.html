@@ -1,6 +1,7 @@
 <!doctype html>
-<head>
-<style>
+<html lang="en-us">
+  <head>
+  <style>
 .webgl
 {
   margin: 0px;
@@ -12,22 +13,31 @@ iframe
   overflow: hidden; 
 }
 </style>
-</head>
-<html lang="en-us">
-  <body class="webgl">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | ProCamera2D</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <script src="TemplateData/UnityProgress.js"></script>
-    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="575px" width="920px"></canvas>
+  </head>
+  <body class="template">
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="575px" width="920px"></canvas>
+    </div>
     <script type='text/javascript'>
-      var Module = 
-      {
-        TOTAL_MEMORY: 268435456,
-        errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-        compatibilitycheck: null,
-        dataUrl: "Release/platformer_demo_webgl.data",
-        codeUrl: "Release/platformer_demo_webgl.js",
-        memUrl: "Release/platformer_demo_webgl.mem",
-      };
-    </script>
-    <script src="Release/UnityLoader.js"></script>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    backgroundColor: "#222C36",
+    splashStyle: "Light",
+    dataUrl: "Release/platformer-demo-webgl.data",
+    codeUrl: "Release/platformer-demo-webgl.js",
+    asmUrl: "Release/platformer-demo-webgl.asm.js",
+    memUrl: "Release/platformer-demo-webgl.mem",
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
+
   </body>
 </html>
