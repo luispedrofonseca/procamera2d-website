@@ -273,17 +273,26 @@
 <p><img alt="HEADER" src="../extension_numeric_boundaries" /></p>
 <h3 id="numeric-boundaries">Numeric Boundaries</h3>
 <h2 id="overview">Overview</h2>
-<p>The Numeric Boundaries extension prevents the camera from moving beyond the assigned values. This is a very flexible extension and allows you to achieve all kinds of different results. You could even, for example, animate the left boundary value and make an auto-scrolling level.</p>
+<p>The Numeric Boundaries extension prevents the camera from moving beyond defined limits. This extension is very simple but at the same time quite flexible.
+You could, for example, use it to animate the left boundary value and make an auto-scrolling level.
+Since v2.4.0, this extension has the option to enable soft boundaries (also know as smooth edges). This gives an extra polished result to your camera movement when it reaches a stop.</p>
 <p><img alt="Numeric Boundaries" src="../../images/gifs/numeric_boundaries.gif" /></p>
 <h2 id="editor">Editor</h2>
 <p><img alt="" src="../../images/numeric_boundaries_editor.png" /></p>
 <p><em>Parameters</em>:</p>
 <ul>
-<li><code>Use Numeric Boundaries</code>: If enabled, the camera will be limited by the boundaries defined below</li>
+<li><code>Use Numeric Boundaries</code>: If enabled, the camera will be limited by the boundaries defined below<ul>
 <li><code>Use Top</code>: If enabled, the top border of the camera will be limited by the defined value</li>
 <li><code>Use Bottom</code>: If enabled, the bottom border of the camera will be limited by the defined value</li>
 <li><code>Use Left</code>: If enabled, the left border of the camera will be limited by the defined value</li>
 <li><code>Use Right</code>: If enabled, the right border of the camera will be limited by the defined value</li>
+</ul>
+</li>
+<li><code>Soft Boundaries</code>: If enabled, the camera stops will be eased out for smoother results<ul>
+<li><code>Softness</code>: How smooth should the camera stop be?</li>
+<li><code>Soft Area</code>: The distance from the boundary from which the camera will start easing out the movement</li>
+</ul>
+</li>
 </ul></div>
             
         </div>
