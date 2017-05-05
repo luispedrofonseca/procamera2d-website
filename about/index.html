@@ -265,6 +265,8 @@
     
         <li class="main "><a href="#change-log">Change-Log</a></li>
         
+            <li><span class="toc-children"><a href="#242-050317">2.4.2 - 05/03/17</a></span></li>
+        
             <li><span class="toc-children"><a href="#241-042517">2.4.1 - 04/25/17</a></span></li>
         
             <li><span class="toc-children"><a href="#240-041017">2.4.0 - 04/10/17</a></span></li>
@@ -384,6 +386,14 @@
 <p>Last but not least, I’d also like to thank <a href="http://www.twitter.com/itayke" target="_blank">Itay Keren</a> for the permission to use his incredible research about 2D camera systems as a reference and as a source of inspiration. Thank you!</p>
 <h2 id="change-log">Change-Log</h2>
 <p>This change log might not represent the latest version on the Asset Store yet since it takes Unity a few days to approve updates. Feel free to e-mail me with your invoice number if you want the updated package before it goes live on the store.</p>
+<h3 id="242-050317">2.4.2 - 05/03/17</h3>
+<ul>
+<li>Core - Fixed a OutOfRange error that could occur when removing targets at runtime </li>
+<li>Rooms - Added an extra parameter to the EnterRoom method that allows you to instantly enter a room (bypassing the configured transition)</li>
+<li>Rooms - Fixed a NaN error that could occur while transitioning between rooms</li>
+<li>Rooms - Added a PlayMaker action for the EnterRoom method</li>
+<li>PlayMaker - All actions now extend the FmsStateActionProCamera2DBase for consistency</li>
+</ul>
 <h3 id="241-042517">2.4.1 - 04/25/17</h3>
 <ul>
 <li>Core - Added a public getter property for the total influences currently applied to the camera</li>
