@@ -627,7 +627,7 @@
         }, 
         {
             "location": "/user-guide/extension-transitions-fx/", 
-            "text": "Transitions FX\n\n\nOverview\n\n\nThe Transitions FX extension allows you to create in and out \u201cappear\u201d animations for your camera. This is useful for entering and exiting scenes with a cool and smooth transition. The transitions are made with shaders and more will be added soon.\n\n\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nTransition FX (Enter/Exit)\n: The effect we want to use, on the Enter or on the Exit animation. The settings below are related to this choice\n\n\nDuration\n: How long should the animation last\n\n\nDelay\n: How long it takes for the animation to start\n\n\nEase Type\n: The ease type of the animation\n\n\nBackground Color\n: The color that fills the background of the effect\n\n\nDirection\n: The direction of the animation (in case it has one)\n\n\nSide\n: The side of the animation (in case it has one)\n\n\nBlinds\n: The number of blinds (Blinds FX only)\n\n\nStart Scene On Enter State\n: If enabled, the scene will \u201cpre-load\u201d the Enter state once the scene starts. This requires you to manually call the TransitionEnter method to continue the animation", 
+            "text": "Transitions FX\n\n\nOverview\n\n\nThe Transitions FX extension allows you to create in and out \u201cappear\u201d animations for your camera. This is useful for entering and exiting scenes with a cool and smooth transition. The transitions are made with shaders and more will be added soon.\n\n\nIf you make changes during runtime on the extension, afterwards you need to call the following methods: \nUpdateTransitionsShaders\n, \nUpdateTransitionsProperties\n or \nUpdateTransitionsColor\n.\n\n\n\n\nEditor\n\n\n\n\nParameters\n:\n\n\n\n\nTransition FX (Enter/Exit)\n: The effect we want to use, on the Enter or on the Exit animation. The settings below are related to this choice\n\n\nDuration\n: How long should the animation last\n\n\nDelay\n: How long it takes for the animation to start\n\n\nEase Type\n: The ease type of the animation\n\n\nBackground Color\n: The color that fills the background of the effect\n\n\nDirection\n: The direction of the animation (in case it has one)\n\n\nSide\n: The side of the animation (in case it has one)\n\n\nBlinds\n: The number of blinds (Blinds FX only)\n\n\nStart Scene On Enter State\n: If enabled, the scene will \u201cpre-load\u201d the Enter state once the scene starts. This requires you to manually call the TransitionEnter method to continue the animation", 
             "title": "Extension - Transitions FX"
         }, 
         {
@@ -637,7 +637,7 @@
         }, 
         {
             "location": "/user-guide/extension-transitions-fx/#overview", 
-            "text": "The Transitions FX extension allows you to create in and out \u201cappear\u201d animations for your camera. This is useful for entering and exiting scenes with a cool and smooth transition. The transitions are made with shaders and more will be added soon.", 
+            "text": "The Transitions FX extension allows you to create in and out \u201cappear\u201d animations for your camera. This is useful for entering and exiting scenes with a cool and smooth transition. The transitions are made with shaders and more will be added soon.  If you make changes during runtime on the extension, afterwards you need to call the following methods:  UpdateTransitionsShaders ,  UpdateTransitionsProperties  or  UpdateTransitionsColor .", 
             "title": "Overview"
         }, 
         {
