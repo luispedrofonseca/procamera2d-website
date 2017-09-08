@@ -266,6 +266,9 @@
         <li class="main "><a href="#editor">Editor</a></li>
         
     
+        <li class="main "><a href="#fx-over-ui">FX over UI</a></li>
+        
+    
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
@@ -289,6 +292,19 @@
 <li><code>Side</code>: The side of the animation (in case it has one)</li>
 <li><code>Blinds</code>: The number of blinds (Blinds FX only)</li>
 <li><code>Start Scene On Enter State</code>: If enabled, the scene will “pre-load” the Enter state once the scene starts. This requires you to manually call the TransitionEnter method to continue the animation</li>
+</ul>
+<h2 id="fx-over-ui">FX over UI</h2>
+<p>If you need your transitions to appear over Unity's standard UI, you need to follow these steps:</p>
+<ul>
+<li>Create a second camera (regular Unity camera) and call it for example "UICamera" - Remove the AudioListener and the other components from this camera.</li>
+<li>Make it a child of the ProCamera2D camera and set its position to (0, 0, 0)</li>
+<li>Set the UICamera "Clear Flags" to "Don't clear".</li>
+<li>Set the UICamera "Culling Mask" to only the "UI" layer.</li>
+<li>Set the UICamera "Depth" to 1.</li>
+<li>On the ProCamera2D's "Culling Mask" uncheck the UI layer </li>
+<li>Add the TransitionsFX component to the UICamera instead of the ProCamera2D. You can simply move it from one to the other, or remove and add it manually.</li>
+<li>Change your Canvas "Render Mode" to "Screen Space - Camera" and under the "Render Camera" field add your newly created UICamera</li>
+<li>Enjoy the TransitionsFX over your UI ;)</li>
 </ul></div>
             
         </div>
