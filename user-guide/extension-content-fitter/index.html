@@ -7,7 +7,7 @@
         
         
         <meta name="author" content="Luís Pedro Fonseca - Unity Developer">
-        <link rel="canonical" href="http://www.procamera2d.com/user-guide/trigger-zoom/">
+        <link rel="canonical" href="http://www.procamera2d.com/user-guide/extension-content-fitter/">
 
         <meta property="og:title" content="Pro Camera 2D - Unity Camera Plugin" />
         <meta property="og:description" content="The definitive 2D and 2.5D Unity camera solution! Includes extensions for Pixel-Perfect, Shake, Cinematics, Transitions, Rooms, Pan and Zoom, Boundaries, and much more!" />
@@ -29,7 +29,7 @@
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
 
-	<title>Trigger - Zoom - Pro Camera 2D - Unity Camera Plugin</title>
+	<title>Extension - Content Fitter - Pro Camera 2D - Unity Camera Plugin</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -122,8 +122,8 @@
                             <a href="../extension-cinematics/">Extension - Cinematics</a>
                         </li>
                     
-                        <li >
-                            <a href="../extension-content-fitter/">Extension - Content Fitter</a>
+                        <li class="active">
+                            <a href="./">Extension - Content Fitter</a>
                         </li>
                     
                         <li >
@@ -202,8 +202,8 @@
                             <a href="../trigger-rails/">Trigger - Rails</a>
                         </li>
                     
-                        <li class="active">
-                            <a href="./">Trigger - Zoom</a>
+                        <li >
+                            <a href="../trigger-zoom/">Trigger - Zoom</a>
                         </li>
                     
                         <li >
@@ -261,42 +261,54 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#trigger-zoom">Trigger Zoom</a></li>
+        <li class="main active"><a href="#content-fitter">Content Fitter</a></li>
         
     
         <li class="main "><a href="#overview">Overview</a></li>
         
     
-        <li class="main "><a href="#editor">Editor</a></li>
+        <li class="main "><a href="#content-fitter-modes">Content Fitter Modes</a></li>
+        
+            <li><span class="toc-children"><a href="#aspect-ratio">Aspect Ratio</a></span></li>
+        
+            <li><span class="toc-children"><a href="#fixed-width">Fixed Width</a></span></li>
+        
+            <li><span class="toc-children"><a href="#fixed-height">Fixed Height</a></span></li>
         
     
-        <li class="main "><a href="#scene-gizmo">Scene Gizmo</a></li>
+        <li class="main "><a href="#editor">Editor</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<p><img alt="HEADER" src="../trigger_zoom" /></p>
-<h3 id="trigger-zoom">Trigger Zoom</h3>
+<p><img alt="HEADER" src="../extension_content_fitter" /></p>
+<h3 id="content-fitter">Content Fitter</h3>
 <h2 id="overview">Overview</h2>
-<p>The zoom trigger is used to change the camera zoom. The closer the camera target is to the center of the trigger, the closer it will get to the target zoom size. You can use it, for example, to zoom in as the player approaches a boss or zoom out as he reaches a larger area.</p>
-<p><img alt="Trigger Zoom" src="../../images/gifs/trigger_zoom.gif" /></p>
+<p>The Content Fitter extension helps you to control how your game looks across multiple screens with different sizes and aspect ratios. Define a target height, widht or aspect ratio and let the extension take care of the rest for you. </p>
+<h2 id="content-fitter-modes">Content Fitter Modes</h2>
+<h3 id="aspect-ratio">Aspect Ratio</h3>
+<p><img alt="Content Fitter" src="../../images/gifs/content_fitter.gif" />
+In this mode, the camera will always resize in order to make sure that the specified aspect ratio fits inside the viewport</p>
+<h3 id="fixed-width">Fixed Width</h3>
+<p><img alt="Content Fitter Fixed Width" src="../../images/gifs/content_fitter_fixed_width.gif" />
+In this mode, the camera resizes while maintaining the specified width</p>
+<h3 id="fixed-height">Fixed Height</h3>
+<p><img alt="Content Fitter Fixed Height" src="../../images/gifs/content_fitter_fixed_height.gif" />
+In this mode, the camera resizes while maintaining the specified height (default behaviour with a regular Unity camera)</p>
 <h2 id="editor">Editor</h2>
-<p><img alt="" src="../../images/trigger_zoom_editor.png" /></p>
+<p><img alt="" src="../../images/content_fitter_editor.png" /></p>
 <p><em>Parameters</em>:</p>
 <ul>
-<li><code>Update Interval</code> (&gt;0): For performance reasons the trigger collision is only tested at a fixed interval. This value represents that interval. Adjust it to fit your needs</li>
-<li><code>Trigger Shape</code>: Either a circle or a rectangle. You can scale it like you do any other GameObject</li>
-<li><code>Set Size As Multiplier</code>: If enabled, you set target size of the camera as a zoom multiplier of the initial camera size</li>
-<li><code>Target Zoom</code>: The max zoom the camera will reach as it enters the trigger area</li>
-<li><code>Zoom Smoothness</code> (&gt;0): Represents how smoothly the camera zooms in/out. The lower the number the quickest the camera zooms</li>
-<li><code>Exclusive Influence Percentage</code> (&gt;0): Represents a percentage of the trigger size that counts as the center of the trigger. Once the camera target enters this area it will fully zoom in/out</li>
-<li><code>Reset Size on Exit</code>: If enabled, after exiting the trigger area the camera will reset its size to the start value</li>
-<li><code>Use Targets Mid Point</code>: If enabled, the trigger will use the camera targets mid point to know when to activate. If not, you can pass it a GameObject reference that the trigger will use instead</li>
-</ul>
-<h2 id="scene-gizmo">Scene Gizmo</h2>
-<p><img alt="" src="../../images/trigger_zoom.png" /></p></div>
+<li><code>Content Fitter Mode</code>: Aspect Ratio, Fixed Width or Fixed Height</li>
+<li><code>Target Width</code>: The width you want to cover with your camera</li>
+<li><code>Target Height</code>: The height you want to cover with your camera</li>
+<li><code>Target Aspect Ratio</code>: The aspect ratio that the camera should fit inside</li>
+<li><code>Horizontal Alignment</code>: The horizontal positioning of the camera inside the viewport</li>
+<li><code>Vertical Alignment</code>: The vertical positioning of the camera inside the viewport</li>
+<li><code>Use Letter/Pillarboxing</code>: If selected, the camera will add black bars to hide the portions outside of the target aspect ratio</li>
+</ul></div>
             
         </div>
 
