@@ -4,6 +4,8 @@
 "asmCodeUrl": "platformer-demo-webgl.asm.code.unityweb",
 "asmMemoryUrl": "platformer-demo-webgl.asm.memory.unityweb",
 "asmFrameworkUrl": "platformer-demo-webgl.asm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
-"backgroundColor": "#222C36"
+"backgroundColor": "#231F20"
 }
