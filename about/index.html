@@ -269,6 +269,10 @@
     
         <li class="main "><a href="#change-log">Change-Log</a></li>
         
+            <li><span class="toc-children"><a href="#254-010418">2.5.4 - 01/04/18</a></span></li>
+        
+            <li><span class="toc-children"><a href="#253-112217">2.5.3 - 11/22/17</a></span></li>
+        
             <li><span class="toc-children"><a href="#252-102417">2.5.2 - 10/24/17</a></span></li>
         
             <li><span class="toc-children"><a href="#251-101017">2.5.1 - 10/10/17</a></span></li>
@@ -408,6 +412,18 @@
 <p>Last but not least, I’d also like to thank <a href="http://www.twitter.com/itayke" target="_blank">Itay Keren</a> for the permission to use his incredible research about 2D camera systems as a reference and as a source of inspiration. Thank you!</p>
 <h2 id="change-log">Change-Log</h2>
 <p>This change log might not represent the latest version on the Asset Store yet since it takes Unity a few days to approve updates. Feel free to e-mail me with your invoice number if you want the updated package before it goes live on the store.</p>
+<h3 id="254-010418">2.5.4 - 01/04/18</h3>
+<ul>
+<li>LimitDistance - (Regression) Fixed incorrect reset of the smoothed camera position which could interfere with other extensions dependent on it</li>
+<li>PanAndZoom - Added two booleans (IsZooming and IsPanning) to know when the camera is zooming and/or panning</li>
+</ul>
+<h3 id="253-112217">2.5.3 - 11/22/17</h3>
+<ul>
+<li>PanAndZoom - Fixed bug that occurred on mobile when activating the extension at a later stage rather than at start</li>
+<li>PixelPerfectSprite - Fixed errors that could occur if there was no PixelPerfect extension enabled</li>
+<li>PixelPerfectSprite - Reduced number of warnings in case no ProCamera2D is found on the scene (a few still have to occur)</li>
+<li>TriggerBoundaries - Fixed disabling NumericBoundaries extension when no value is set</li>
+</ul>
 <h3 id="252-102417">2.5.2 - 10/24/17</h3>
 <ul>
 <li>Core - Added two new events - "OnUpdateScreenSizeFinished" and "OnDollyZoomFinished"</li>
