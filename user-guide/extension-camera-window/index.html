@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <meta name="author" content="Luís Pedro Fonseca - Unity Developer">
+        <link rel="canonical" href="http://www.procamera2d.com/user-guide/extension-camera-window/">
+
+        <meta property="og:title" content="Pro Camera 2D - Unity Camera Plugin" />
+        <meta property="og:description" content="The definitive 2D and 2.5D Unity camera solution! Includes extensions for Pixel-Perfect, Shake, Cinematics, Transitions, Rooms, Pan and Zoom, Boundaries, and much more!" />
+        <meta property="og:url" content="http://www.procamera2d.com" />
+        <meta property="og:image" content="http://www.procamera2d.com/images/facebook-og.png" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@lpfonseca">
+        <meta name="twitter:creator" content="@lpfonseca">
+        <meta name="twitter:title" content="Pro Camera 2D - Unity Camera Plugin">
+        <meta name="twitter:description" content="The definitive 2D and 2.5D Unity camera solution! Includes extensions for Pixel-Perfect, Shake, Cinematics, Transitions, Rooms, Pan and Zoom, Boundaries, and much more!">
+        <meta name="twitter:image" content="http://www.procamera2d.com/images/facebook-og.png">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+	<title>Extension - Camera Window - Pro Camera 2D - Unity Camera Plugin</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <link rel="canonical" href="http://www.procamera2d.com" />
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-65643996-1', 'procamera2d.com');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../.."><img src="../../images/home/procamera2d_logo.png" alt="Pro Camera 2D"></a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">HOME</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DEMOS <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../demo-platformer/">Platformer</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../demo-topdownshooter/">Top Down Shooter</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">USER GUIDE <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../core/">Core</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="./">Extension - Camera Window</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-cinematics/">Extension - Cinematics</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-content-fitter/">Extension - Content Fitter</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-forward-focus/">Extension - Forward Focus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-geometry-boundaries/">Extension - Geometry Boundaries</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-limit-distance/">Extension - Limit Distance</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-limit-speed/">Extension - Limit Speed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-numeric-boundaries/">Extension - Numeric Boundaries</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-pan-and-zoom/">Extension - Pan And Zoom</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-parallax/">Extension - Parallax</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-pixel-perfect/">Extension - Pixel Perfect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-pointer-influence/">Extension - Pointer Influence</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-rails/">Extension - Rails</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-repeater/">Extension - Repeater</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-rooms/">Extension - Rooms</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-shake/">Extension - Shake</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-speed-based-zoom/">Extension - Speed Based Zoom</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-transitions-fx/">Extension - Transitions FX</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../extension-zoom-to-fit/">Extension - Zoom To Fit</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../trigger-boundaries/">Trigger - Boundaries</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../trigger-influence/">Trigger - Influence</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../trigger-rails/">Trigger - Rails</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../trigger-zoom/">Trigger - Zoom</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../custom-extensions-triggers/">Custom Extensions and Triggers</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../3rd-party-plugins-support/">3rd Party Plugins Support</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../showcase/">SHOWCASE</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../about/">ABOUT</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../../support/">SUPPORT</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search fa-lg"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://www.assetstore.unity3d.com/#!/content/42095?aid=1011lHdo" target="_blank">
+                        <div class="purchase-button"><i class="fa fa-shopping-cart fa-lg"> </i> Purchase</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#camera-window">Camera Window</a></li>
+        
+    
+        <li class="main "><a href="#overview">Overview</a></li>
+        
+    
+        <li class="main "><a href="#editor">Editor</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<p><img alt="HEADER" src="../extension_camera_window" /></p>
+<h3 id="camera-window">Camera Window</h3>
+<h2 id="overview">Overview</h2>
+<p>The Camera Window extension provides a rectangular region in camera space where targets can move without affecting the camera position. It’s a great extension to use whenever you want to avoid unneccessary movement like, for example, when jumping on platformers.</p>
+<p><img alt="Camera Window" src="../../images/gifs/camera_window.gif" /></p>
+<h2 id="editor">Editor</h2>
+<p><img alt="" src="../../images/camera_window_editor.png" /></p>
+<p><em>Parameters</em>:</p>
+<ul>
+<li><code>Width</code> (0 - 1): The window width</li>
+<li><code>Height</code> (0 - 1): The window height</li>
+<li><code>X</code>: The window horizontal offset</li>
+<li><code>Y</code>: The window vertical offset</li>
+</ul></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <div class="center">Copyright 2018 Pro Camera 2D | All Rights Reserved | A product by <a href="http://www.luispedrofonseca.com"><strong>Luís Pedro Fonseca</strong></a><p> </p></div>
+            
+                <div class="center">
+                    <a href="http://www.twitter.com/lpfonseca" target="_blank" title="Twitter"><img alt="Twitter" src="../../images/footer/icon-twitter.png" width="32" height="24"></a>
+                    <a href="http://forum.unity3d.com/threads/released-procamera2d-the-definitive-2d-camera-solution-for-unity.344436/" target="_blank" title="Unity Forums"><img alt="Unity Forums" src="../../images/footer/icon-unity.png" width="32" height="24"></a>
+                    <a href="/support" title="Email"><img alt="Email" src="../../images/footer/icon-email.png" width="32" height="24"></a>
+                </div>
+                <p></p>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/custom.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Enter your search terms below.</p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

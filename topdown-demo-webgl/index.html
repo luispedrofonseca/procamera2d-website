@@ -1,0 +1,33 @@
+<!doctype html>
+<head>
+<style>
+.webgl
+{
+  margin: 0px;
+  float: center;
+}
+
+iframe 
+{ 
+  overflow: hidden; 
+}
+</style>
+</head>
+<html lang="en-us">
+  <body class="webgl">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="575px" width="920px"></canvas>
+    <script type='text/javascript'>
+      var Module = 
+      {
+        TOTAL_MEMORY: 268435456,
+        errorhandler: null,     // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+        compatibilitycheck: null,
+        dataUrl: "Release/top_down_shooter_demo_webgl.data",
+        codeUrl: "Release/top_down_shooter_demo_webgl.js",
+        memUrl: "Release/top_down_shooter_demo_webgl.mem",
+      };
+    </script>
+    <script src="Release/UnityLoader.js"></script>
+  </body>
+</html>

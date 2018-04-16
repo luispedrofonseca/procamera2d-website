@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <meta name="author" content="Luís Pedro Fonseca - Unity Developer">
+        <link rel="canonical" href="http://www.procamera2d.com/about/">
+
+        <meta property="og:title" content="Pro Camera 2D - Unity Camera Plugin" />
+        <meta property="og:description" content="The definitive 2D and 2.5D Unity camera solution! Includes extensions for Pixel-Perfect, Shake, Cinematics, Transitions, Rooms, Pan and Zoom, Boundaries, and much more!" />
+        <meta property="og:url" content="http://www.procamera2d.com" />
+        <meta property="og:image" content="http://www.procamera2d.com/images/facebook-og.png" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@lpfonseca">
+        <meta name="twitter:creator" content="@lpfonseca">
+        <meta name="twitter:title" content="Pro Camera 2D - Unity Camera Plugin">
+        <meta name="twitter:description" content="The definitive 2D and 2.5D Unity camera solution! Includes extensions for Pixel-Perfect, Shake, Cinematics, Transitions, Rooms, Pan and Zoom, Boundaries, and much more!">
+        <meta name="twitter:image" content="http://www.procamera2d.com/images/facebook-og.png">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+	<title>ABOUT - Pro Camera 2D - Unity Camera Plugin</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/base.css" rel="stylesheet">
+        <link href="../css/extra.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <link rel="canonical" href="http://www.procamera2d.com" />
+
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-65643996-1', 'procamera2d.com');
+            ga('send', 'pageview');
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href=".."><img src="../images/home/procamera2d_logo.png" alt="Pro Camera 2D"></a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="..">HOME</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DEMOS <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../demo-platformer/">Platformer</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../demo-topdownshooter/">Top Down Shooter</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">USER GUIDE <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../user-guide/core/">Core</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-camera-window/">Extension - Camera Window</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-cinematics/">Extension - Cinematics</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-content-fitter/">Extension - Content Fitter</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-forward-focus/">Extension - Forward Focus</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-geometry-boundaries/">Extension - Geometry Boundaries</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-limit-distance/">Extension - Limit Distance</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-limit-speed/">Extension - Limit Speed</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-numeric-boundaries/">Extension - Numeric Boundaries</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-pan-and-zoom/">Extension - Pan And Zoom</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-parallax/">Extension - Parallax</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-pixel-perfect/">Extension - Pixel Perfect</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-pointer-influence/">Extension - Pointer Influence</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-rails/">Extension - Rails</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-repeater/">Extension - Repeater</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-rooms/">Extension - Rooms</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-shake/">Extension - Shake</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-speed-based-zoom/">Extension - Speed Based Zoom</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-transitions-fx/">Extension - Transitions FX</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/extension-zoom-to-fit/">Extension - Zoom To Fit</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/trigger-boundaries/">Trigger - Boundaries</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/trigger-influence/">Trigger - Influence</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/trigger-rails/">Trigger - Rails</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/trigger-zoom/">Trigger - Zoom</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/custom-extensions-triggers/">Custom Extensions and Triggers</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../user-guide/3rd-party-plugins-support/">3rd Party Plugins Support</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../showcase/">SHOWCASE</a>
+                </li>
+            
+            
+            
+                <li class="active">
+                    <a href="./">ABOUT</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../support/">SUPPORT</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search fa-lg"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://www.assetstore.unity3d.com/#!/content/42095?aid=1011lHdo" target="_blank">
+                        <div class="purchase-button"><i class="fa fa-shopping-cart fa-lg"> </i> Purchase</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#author">Author</a></li>
+        
+    
+        <li class="main "><a href="#credits">Credits</a></li>
+        
+    
+        <li class="main "><a href="#change-log">Change-Log</a></li>
+        
+            <li><span class="toc-children"><a href="#261-041618">2.6.1 - 04/16/18</a></span></li>
+        
+            <li><span class="toc-children"><a href="#260-022018">2.6.0 - 02/20/18</a></span></li>
+        
+            <li><span class="toc-children"><a href="#255-010818">2.5.5 - 01/08/18</a></span></li>
+        
+            <li><span class="toc-children"><a href="#254-010618">2.5.4 - 01/06/18</a></span></li>
+        
+            <li><span class="toc-children"><a href="#253-112217">2.5.3 - 11/22/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#252-102417">2.5.2 - 10/24/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#251-101017">2.5.1 - 10/10/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#250-100917">2.5.0 - 10/09/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#248-092517">2.4.8 - 09/25/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#247-091117">2.4.7 - 09/11/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#246-080717">2.4.6 - 08/07/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#245-070317">2.4.5 - 07/03/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#244-060117">2.4.4 - 06/01/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#243-051517">2.4.3 - 05/15/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#242-050317">2.4.2 - 05/03/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#241-042517">2.4.1 - 04/25/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#240-041017">2.4.0 - 04/10/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#234-040617">2.3.4 - 04/06/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#233-031617">2.3.3 - 03/16/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#232-030917">2.3.2 - 03/09/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#231-030217">2.3.1 - 03/02/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#230-022717">2.3.0 - 02/27/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#229-020817">2.2.9 - 02/08/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#228-013117">2.2.8 - 01/31/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#227-012317">2.2.7 - 01/23/17</a></span></li>
+        
+            <li><span class="toc-children"><a href="#226-122716">2.2.6 - 12/27/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#225-121816">2.2.5 - 12/18/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#224-112216">2.2.4 - 11/22/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#223-111816">2.2.3 - 11/18/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#222-110116">2.2.2 - 11/01/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#221-102016">2.2.1 - 10/20/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#220-093016">2.2.0 - 09/30/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#215-092116">2.1.5 – 09/21/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#214-090116">2.1.4 – 09/01/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#213-081516">2.1.3 – 08/15/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#212-072816">2.1.2 – 07/28/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#211-071216">2.1.1 – 07/12/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#210-062816">2.1.0 - 06/28/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#205-060716">2.0.5 - 06/07/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#204-051816">2.0.4 – 05/18/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#203-050416">2.0.3 – 05/04/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#202-041416">2.0.2 – 04/14/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#201-033116">2.0.1 – 03/31/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#200-031016">2.0.0 – 03/10/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#192-020816">1.9.2 – 02/08/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#191-013016">1.9.1 – 01/30/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#190-012616">1.9.0 – 01/26/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#181-011516">1.8.1 – 01/15/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#180-010816">1.8.0 – 01/08/16</a></span></li>
+        
+            <li><span class="toc-children"><a href="#173-121515">1.7.3 – 12/15/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#172-120915">1.7.2 – 12/09/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#171-120415">1.7.1 – 12/04/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#170-120115">1.7.0 – 12/01/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#163-112315">1.6.3 – 11/23/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#162-111615">1.6.2 – 11/16/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#161-111015">1.6.1 – 11/10/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#160-103015">1.6.0 – 10/30/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#153-101615">1.5.3 – 10/16/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#152-100215">1.5.2 – 10/02/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#151-093015">1.5.1 – 09/30/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#150-092615">1.5.0 – 09/26/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#141-091715">1.4.1 – 09/17/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#140-091115">1.4.0 – 09/11/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#131-083115">1.3.1 – 08/31/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#130-081415">1.3.0 – 08/14/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#120-080615">1.2.0 – 08/06/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#110-080315">1.1.0 – 08/03/15</a></span></li>
+        
+            <li><span class="toc-children"><a href="#100-072915">1.0.0 – 07/29/15</a></span></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h2 id="author">Author</h2>
+<p>Pro Camera 2D is an Unity plugin made by <a href="http://www.luispedrofonseca.com" target="_blank">Luís Pedro Fonseca</a>.</p>
+<p>Luís Fonseca is an interactive developer from Porto (Portugal), with over a decade of experience on a multitude of technologies ranging from Flash to Objective-C, with a strong focus on Unity and gaming over the last several years. He worked on a very wide range of projects for high-profiles companies such as FOX Broadcasting, Microsoft, RIOT Games, EMC and many others. Recently he decided to start creating his own games and with that came the need to create his own plugins. You can find more about his work at <a href="http://www.luispedrofonseca.com" target="_blank">his website</a> or follow him on <a href="http://www.twitter.com/lpfonseca" target="_blank">Twitter</a>.</p>
+<h2 id="credits">Credits</h2>
+<p>I’d like to thank my work colleagues for all the support given throughout the development of this plugin, helping me find bugs and come up with new features. Thanks guys! 😉 <a href="http://www.twitter.com/Marduken" target="_blank">@Marduken</a>, <a href="http://www.twitter.com/AzoreanRick" target="_blank">@AzoreanRick</a>, <a href="http://www.twitter.com/HRuivo89" target="_blank">@HRuivo89</a>, <a href="http://www.twitter.com/instantjf" target="_blank">@instantjf</a>, <a href="http://www.twitter.com/JJCanvas" target="_blank">@JJCanvas</a> and <a href="http://www.twitter.com/Shinho" target="_blank">@Shinho</a></p>
+<p>Last but not least, I’d also like to thank <a href="http://www.twitter.com/itayke" target="_blank">Itay Keren</a> for the permission to use his incredible research about 2D camera systems as a reference and as a source of inspiration. Thank you!</p>
+<h2 id="change-log">Change-Log</h2>
+<p>This change log might not represent the latest version on the Asset Store yet since it takes Unity a few days to approve updates. Feel free to e-mail me with your invoice number if you want the updated package before it goes live on the store.</p>
+<h3 id="261-041618">2.6.1 - 04/16/18</h3>
+<ul>
+<li>PanAndZoom - Replaced platform dependent compilation with touch support verification for improved compatibility</li>
+<li>PanAndZoom - Added Pan start and finish events</li>
+<li>Triggers - Improved support for multi-scenes setups</li>
+</ul>
+<h3 id="260-022018">2.6.0 - 02/20/18</h3>
+<ul>
+<li>Unity 2018.1 - Added support for the latest beta</li>
+<li>Timeline - Added Timeline actions for adding and removing camera targets</li>
+<li>Cinematics - Fixed stuttering that occured with the final step of the cinematic when used together with the NumericBoundaries extension</li>
+</ul>
+<h3 id="255-010818">2.5.5 - 01/08/18</h3>
+<ul>
+<li>Core - Fixed null reference that could occur if an extension was not initialized properly due to the randomized script execution order</li>
+</ul>
+<h3 id="254-010618">2.5.4 - 01/06/18</h3>
+<ul>
+<li>LimitDistance - (Regression) Fixed incorrect reset of the smoothed camera position which could interfere with other extensions dependent on it</li>
+<li>PanAndZoom - Added two booleans (IsZooming and IsPanning) to know when the camera is zooming and/or panning</li>
+</ul>
+<h3 id="253-112217">2.5.3 - 11/22/17</h3>
+<ul>
+<li>PanAndZoom - Fixed bug that occurred on mobile when activating the extension at a later stage rather than at start</li>
+<li>PixelPerfectSprite - Fixed errors that could occur if there was no PixelPerfect extension enabled</li>
+<li>PixelPerfectSprite - Reduced number of warnings in case no ProCamera2D is found on the scene (a few still have to occur)</li>
+<li>TriggerBoundaries - Fixed disabling NumericBoundaries extension when no value is set</li>
+</ul>
+<h3 id="252-102417">2.5.2 - 10/24/17</h3>
+<ul>
+<li>Core - Added two new events - "OnUpdateScreenSizeFinished" and "OnDollyZoomFinished"</li>
+<li>Core - Code cleanup</li>
+<li>Parallax - Added compatibility with the ContentFitter extension</li>
+<li>TransitionsFX - Added option to use realtime transitions</li>
+<li>PanAndZoom - Added option to choose which mouse button to use for panning</li>
+<li>TriggerBoundaries - Fixed bug when comparing trigger boundaries that use the relative mode</li>
+</ul>
+<h3 id="251-101017">2.5.1 - 10/10/17</h3>
+<ul>
+<li>ContentFitter - Small tweaks</li>
+</ul>
+<h3 id="250-100917">2.5.0 - 10/09/17</h3>
+<ul>
+<li>ContentFitter - New extension! Fit anything on screen and easily control how it looks across different screen sizes</li>
+</ul>
+<h3 id="248-092517">2.4.8 - 09/25/17</h3>
+<ul>
+<li>LimitDistance - Added an option to use the targets position instead of the camera center for calculations</li>
+<li>LimitDistance - Fixed stutter when the camera target goes beyond the limits</li>
+</ul>
+<h3 id="247-091117">2.4.7 - 09/11/17</h3>
+<ul>
+<li>Core - Removed calls to static instance for easier support of multi-camera setups</li>
+<li>PanAndZoom - Added support for multiple cameras setups</li>
+<li>PanAndZoom - Added support for multiple fingers panning</li>
+<li>PixelPerfect - Added a getter for the current viewport scale (can be useful for other components)</li>
+</ul>
+<h3 id="246-080717">2.4.6 - 08/07/17</h3>
+<ul>
+<li>LimitDistance - Added support for limiting the top, bottom, left and right directions instead of only vertically and horizontally</li>
+<li>LimitDistance - Fixed incorrect reset of the smoothed camera position which could interfere with other extensions dependent on it</li>
+<li>BaseTrigger - Disabling a trigger now calls the ExitedTrigger method for consistency</li>
+<li>ZoomToFit - Added a "CompensateForCameraPosition" property (on by default) that makes the calculations from the camera center and not the targets </li>
+<li>PanAndZoom - Fixed wobbly zoom behaviour that could occur under certain circumstances</li>
+<li>PanAndZoom - Zooming while over pan edges is now supported</li>
+<li>PanAndZoom - 2DToolkit - Fixed zooming when the start zoom factor is different from one</li>
+<li>PlayMaker - Added the actions back to the package while transitioning to the new PlayMaker Ecosystem</li>
+</ul>
+<h3 id="245-070317">2.4.5 - 07/03/17</h3>
+<ul>
+<li>Rooms - Added a move gizmo so you can easily move rooms while in edit mode</li>
+<li>Rooms - Added a property (CurrentRoom) that returns the room the camera is currently in, if any</li>
+</ul>
+<h3 id="244-060117">2.4.4 - 06/01/17</h3>
+<ul>
+<li>PanAndZoom - Added an option to prevent panning and zooming if the user is pointing (or touching) on an UI element</li>
+<li>PanAndZoom - Fixed issue that could cause an instant camera movement after zooming</li>
+</ul>
+<h3 id="243-051517">2.4.3 - 05/15/17</h3>
+<ul>
+<li>Core - Added an IsMoving property</li>
+<li>Core - Added an overloaded AddCameraTargets method that takes a list of CameraTarget's</li>
+<li>PixelPerfect - Zoom is now applied additively for greater control</li>
+<li>Rooms - Added a "GetRoom" method that returns a room by its ID. Useful, for example, if you're trying to know information about a specific room size</li>
+<li>PlayMaker - Current actions were marked as obsolete. New and improved actions will be added directly to the PlayMaker ecosystem for improved integration</li>
+</ul>
+<h3 id="242-050317">2.4.2 - 05/03/17</h3>
+<ul>
+<li>Core - Fixed a OutOfRange error that could occur when removing targets at runtime </li>
+<li>Rooms - Added an extra parameter to the EnterRoom method that allows you to instantly enter a room (bypassing the configured transition)</li>
+<li>Rooms - Fixed a NaN error that could occur while transitioning between rooms</li>
+<li>Rooms - Added a PlayMaker action for the EnterRoom method</li>
+<li>PlayMaker - All actions now extend the FmsStateActionProCamera2DBase for consistency</li>
+</ul>
+<h3 id="241-042517">2.4.1 - 04/25/17</h3>
+<ul>
+<li>Core - Added a public getter property for the total influences currently applied to the camera</li>
+<li>PanAndZoom - Fixed small glitch when used together with the PointerInfluence extension</li>
+<li>Parallax - Fixed bug that caused the first camera clear flags to be set to Depth</li>
+</ul>
+<h3 id="240-041017">2.4.0 - 04/10/17</h3>
+<ul>
+<li>NumericBoundaries - Added an option to enable soft boundaries (smooth edges) for eased camera stops</li>
+<li>NumericBoundaries - Removed the elastic boundaries option</li>
+</ul>
+<h3 id="234-040617">2.3.4 - 04/06/17</h3>
+<ul>
+<li>Core - CalculateScreenSize method is now public. It should be called if the camera size is modified externally</li>
+<li>PixelPerfect - Fixed flickering that could occur in certain situations if the PPU was low</li>
+<li>PlayMaker - Updated actions to support the latest version</li>
+</ul>
+<h3 id="233-031617">2.3.3 - 03/16/17</h3>
+<ul>
+<li>Core - Added an option to switch between relative and world units offset</li>
+<li>CameraWindow - Added an option to switch between relative and world units position and size</li>
+<li>ZoomToFit - Added a gizmo of the targets' bounding box for easier debugging</li>
+<li>Shake - Fixed error when adding presets to a newly created extension</li>
+</ul>
+<h3 id="232-030917">2.3.2 - 03/09/17</h3>
+<ul>
+<li>Parallax - Added two parameters (FrontDepthStart and BackDepthStart) to customize the parallax cameras depth</li>
+<li>SpeedBasedZoom - Removed unused parameters</li>
+<li>Shake - Fixed error when using a constant shake preset with a delta time of zero</li>
+<li>Repeater - Automatically calculate the size of a repeated object if it's a Sprite</li>
+<li>Core - Prevented null reference error on extension editors under specific conditions</li>
+</ul>
+<h3 id="231-030217">2.3.1 - 03/02/17</h3>
+<ul>
+<li>Fix for ScriptableObjectUtility error</li>
+</ul>
+<h3 id="230-022717">2.3.0 - 02/27/17</h3>
+<ul>
+<li>Shake - Revamped extension (Smoother results, file presets, constant shakes support)</li>
+<li>Core - Automatically removes invalid camera targets</li>
+<li>PanAndZoom - Horizontal (left/right) and vertical (top/bottom) pan edges are now independent for greater flexibility</li>
+<li>Rooms - Added a method (RemoveRoom) to remove a room by its name</li>
+<li>Multiple - Added ProCamera2D's delta time to all SmoothDamp calls</li>
+</ul>
+<h3 id="229-020817">2.2.9 - 02/08/17</h3>
+<ul>
+<li>Core - Added a static property (Exists) to know if there's a ProCamera2D present in the scene</li>
+<li>Parallax - Added an option to toggle the parallax layers size adjustment</li>
+<li>TriggerZoom - The trigger now has precedence over other zoom extensions</li>
+</ul>
+<h3 id="228-013117">2.2.8 - 01/31/17</h3>
+<ul>
+<li>Core - Support for Unity 5.6 (beta 5)</li>
+<li>Core - Added an event (OnCameraResize<Vector2>) that fires when the camera resizes</li>
+<li>Core - Automatically detect screen resolution changes during runtime and update necessary values accordingly</li>
+</ul>
+<h3 id="227-012317">2.2.7 - 01/23/17</h3>
+<ul>
+<li>Core - Support for Unity 5.6 (beta 3)</li>
+<li>Repeater - Fixed a bug where an unnecessary object was created at edit time</li>
+</ul>
+<h3 id="226-122716">2.2.6 - 12/27/16</h3>
+<ul>
+<li>Rooms - Only add an initial room when creating the component, not if there's none present</li>
+<li>Core - Added some new methods: "ResetMovement", "ResetSize", "ResetExtensions" and "CenterOnTargets"</li>
+<li>PlayMaker - Added a new action: ShakeStop</li>
+</ul>
+<h3 id="225-121816">2.2.5 - 12/18/16</h3>
+<ul>
+<li>ForwardFocus - Added a parameter (MovementThreshold) that prevents the focus from being changed if the camera movement is smaller than it</li>
+<li>Rails - Added a new method (RemoveRailsTarget)</li>
+<li>Core - Improved error handling in case of missing ProCamera2D core component</li>
+</ul>
+<h3 id="224-112216">2.2.4 - 11/22/16</h3>
+<ul>
+<li>TriggerBoundaries - Fixed a bug that prevent them from working if no trigger was set as starting boundaries</li>
+<li>Cinematics - Fixed a bug on the editor that prevented it from showing the CinematicTargetReached UnityEvent</li>
+</ul>
+<h3 id="223-111816">2.2.3 - 11/18/16</h3>
+<ul>
+<li>Rooms - Removed the dependency from having the NumericBoundaries extension on the same GameObject</li>
+<li>Rooms - Added an event that fires when the camera target has exited all rooms</li>
+<li>Cinematics - Replaced standard C# events with Unity events for easier integration with the editor</li>
+</ul>
+<h3 id="222-110116">2.2.2 - 11/01/16</h3>
+<ul>
+<li>Core - Added a Dolly Zoom (Hitchcock effect) method. Created an example scene for it</li>
+<li>Rooms - Added a method to set the default numeric boundaries settings for when leaving all rooms</li>
+<li>PanAndZoom - Prevented unintentional pans when outside of the GameView on the editor</li>
+</ul>
+<h3 id="221-102016">2.2.1 - 10/20/16</h3>
+<ul>
+<li>Core - Greatly improved rendering performance of the editor</li>
+<li>PanAndZoom - Fixed an issue that prevented zooming after toggling the component</li>
+<li>Rooms - Added an ID property that can be used to identify each room</li>
+<li>Rooms - OnStartedTransition and OnFinishedTransition now send the previous room too</li>
+<li>Rooms - Editor tweaks</li>
+</ul>
+<h3 id="220-093016">2.2.0 - 09/30/16</h3>
+<ul>
+<li>New extension - Rooms! Easily create and manage multiple rooms on your scene</li>
+<li>Parallax extension - Added a new method (CalculateParallaxObjectsOffset) to manually recalculate parallax objects offset if needed</li>
+<li>PanAndZoom extension - Added a boolean (ResetPrevPanPoint) to prevent movement jumps after toggling the component</li>
+<li>Added links to documentation on core, extensions and triggers' editor windows</li>
+<li>Fixed an issue with the SpeedBasedZoom extension that caused an hard stop when reaching the maximum and minimum zoom values</li>
+</ul>
+<h3 id="215-092116">2.1.5 – 09/21/16</h3>
+<ul>
+<li>NumericBoundaries extension editor tweaks</li>
+<li>Fixed PanAndZoom extension bug when on the XZ or YZ axis</li>
+<li>Fixed shake not stopping to correct position when using the PixelPerfect extension</li>
+<li>Support for Unity 5.5</li>
+</ul>
+<h3 id="214-090116">2.1.4 – 09/01/16</h3>
+<ul>
+<li>The values on the EaseFromTo method are now automatically clamped to prevent overshooting</li>
+<li>Fixed missing static instance of the TransitionsFX extension on scene change</li>
+<li>Fixed typo on the AdjustCameraTargetInfluence core method</li>
+</ul>
+<h3 id="213-081516">2.1.3 – 08/15/16</h3>
+<ul>
+<li>Fixed PanAndZoom bug on touch devices that slowed down pan speed</li>
+</ul>
+<h3 id="212-072816">2.1.2 – 07/28/16</h3>
+<ul>
+<li>Added additional methods to the TransitionsFX extension to easily update the properties during runtime</li>
+<li>Fixed PanAndZoom bug that prevented it from working properly on the XZ axis</li>
+</ul>
+<h3 id="211-071216">2.1.1 – 07/12/16</h3>
+<ul>
+<li>Improved TransitionsFX performance</li>
+<li>Fixed memory allocation on the Repeater extension</li>
+<li>Fixed extremely quick transition routines not being cleared on certain circumstances</li>
+<li>Fixed bug in PanAndZoom extension that could prevent zoom when using negative speed values</li>
+</ul>
+<h3 id="210-062816">2.1.0 - 06/28/16</h3>
+<ul>
+<li>TransitionsFX extension now supports the use of textures for completely customizable transitions</li>
+<li>The drag speed of the PanAndZoom extension is now based on "real" world coordinates, giving it a much more natural feel on all platforms</li>
+</ul>
+<h3 id="205-060716">2.0.5 - 06/07/16</h3>
+<ul>
+<li>Support for removal and destruction of extensions during runtime</li>
+<li>Fixed a bug on the PanAndZoom extension where the camera could get stuck on its max/min zoom</li>
+<li>Improved TransitionsFX shaders compatibility with older devices</li>
+<li>Fire only one transition start/end event even if multiple occur during one complex animation</li>
+<li>Fixed a bug on the Cinematics extension when EaseInDuration is set to 0</li>
+<li>Fixed a bug on the Cinematics extension where it wouldn't return to origin if there was no camera target</li>
+</ul>
+<h3 id="204-051816">2.0.4 – 05/18/16</h3>
+<ul>
+<li>Added Pause/Unpause methods to the Cinematics extension</li>
+<li>Cinematics extension now supports parented cameras</li>
+<li>Fixed camera stutter if trying to zoom paste the limits with the PanAndZoom extension</li>
+<li>Fixed regression bug – TriggerBoundaries wouldn’t override previous one if transition still occurring</li>
+</ul>
+<h3 id="203-050416">2.0.3 – 05/04/16</h3>
+<ul>
+<li>Added an AutoScaleMode option to the PixelPerfect extension for better control over how the camera scales</li>
+<li>Allow the ClearFlags of the last camera on the Parallax extension to be manually set if needed</li>
+<li>Fixed regression – bug calculating camera size when using a 2DToolkit Pixels Per Meter camera</li>
+</ul>
+<h3 id="202-041416">2.0.2 – 04/14/16</h3>
+<ul>
+<li>Improved the LetterBox of the Cinematics extension so it doesn’t render when it’s set to 0</li>
+<li>Improved TriggerInfluence algorithm to provide smoother results when using the ExclusivePercentage parameter</li>
+<li>Improved LetterBox and TransitionsFX shaders</li>
+<li>Fixed camera start position when parented</li>
+<li>Fixed null reference bug on PixelPerfectSprite under certain circumstances</li>
+<li>Fixed a bug where a PixelPerfectSprite could get misplaced on certain occasions</li>
+<li>Added the action “OnShakeCompleted” to the Shake extension to know when a shake has completed</li>
+<li>Reset Shake presets and Rails nodes from the editor after scene load</li>
+</ul>
+<h3 id="201-033116">2.0.1 – 03/31/16</h3>
+<ul>
+<li>Support for Unity 5.4.0</li>
+<li>Fixed skipping certain TriggerBoundaries transitions on some edges cases</li>
+<li>Fixed bug calculating camera size when using a 2DToolkit Pixels Per Meter camera</li>
+</ul>
+<h3 id="200-031016">2.0.0 – 03/10/16</h3>
+<ul>
+<li>New extension – TransitionsFX! Transition between scenes or camera positions with beautiful effects</li>
+<li>Major refactor focusing on code architecture and performance</li>
+<li>Moved LimitSpeed out of the core into a separate extension</li>
+<li>Moved LimitDistance out of the core into a separate extension</li>
+<li>Allow the camera to be parented to any kind of hierarchy</li>
+<li>Added the option to not snap the camera to the pixel grid when using SnapMovementToGrid on the PixelPerfect extension</li>
+<li>Added the option for the Shake extension to ignore the timeScale, allowing it to work even if the game is paused</li>
+<li>Added a “ApplyInfluenceIgnoringBoundaries” method to the Shake extension</li>
+<li>Fixed StopShaking method on the Shake extension</li>
+<li>More code comments</li>
+</ul>
+<h3 id="192-020816">1.9.2 – 02/08/16</h3>
+<ul>
+<li>Added a parameter to the PanAndZoom extension that allows to define how fast the camera inertia should stop once the user starts dragging after a previous pan movement</li>
+<li>NumericBoundaries extension editor tweaks</li>
+</ul>
+<h3 id="191-013016">1.9.1 – 01/30/16</h3>
+<ul>
+<li>Added an indication of the current camera velocity to the SpeedBasedZoom extension editor for reference</li>
+<li>Added Load/Save buttons to the presets list on the Shake extension for an easier control</li>
+<li>Fixed a bug that could cause a few extensions to start before the core is initialized</li>
+<li>Added a property to know if a TriggerBoundaries is the currently active one</li>
+<li>Use the original camera parent when parenting the camera for the Shake extension</li>
+</ul>
+<h3 id="190-012616">1.9.0 – 01/26/16</h3>
+<ul>
+<li>New extension – PanAndZoom! Move and/or zoom the camera with touch (on mobile) or with the mouse (on desktop)</li>
+<li>Re-enable triggers calculations after their GameObjects have been disabled and enabled again</li>
+<li>Added a Zoom method to the core</li>
+<li>Allow TriggerBoundaries to be defined as starting boundaries at run-time</li>
+</ul>
+<h3 id="181-011516">1.8.1 – 01/15/16</h3>
+<ul>
+<li>Added a Rect property to Pro Camera 2D core that will change its rect and the rect of parallax cameras if existent</li>
+<li>Fixed build error related to EditorPrefsX class on Windows Phone 8.1</li>
+</ul>
+<h3 id="180-010816">1.8.0 – 01/08/16</h3>
+<ul>
+<li>New extension – Repeater!</li>
+<li>The Pro Camera 2D editor list of available extensions and triggers is now dynamically populated.</li>
+<li>Improved Trigger Rails editor</li>
+<li>Name parallax cameras according to their speeds for easier identification</li>
+<li>Gizmos drawing optimizations</li>
+<li>Implemented ISerializationCallbackReceiver so Pro Camera 2D works even during runtime code reloads</li>
+<li>Changed the OnReset handler of BasePC2D to public</li>
+<li>Elastic numeric boundaries</li>
+<li>Added a method (RemoveCinematicTarget) to manually remove a target from the Cinematics plugin</li>
+<li>Added support for the Letterbox effect when using the Parallax extension</li>
+</ul>
+<h3 id="173-121515">1.7.3 – 12/15/15</h3>
+<ul>
+<li>Added a method (TestTrigger) to the BaseTrigger class that allows to manually force the trigger collision test</li>
+<li>Added a method (AddCinematicTarget) to the Cinematics extension that allows to manually add a new cinematic target at runtime</li>
+<li>Added a method (AddRailsTarget) to the Rails extension that allows to manually add a new rails target at runtime</li>
+<li>Fixed a bug that could cause a null reference after destroying an object that had a Pro Camera 2D extension</li>
+</ul>
+<h3 id="172-120915">1.7.2 – 12/09/15</h3>
+<ul>
+<li>Allow Rails extension to be added to a different GameObject than the one with Pro Camera 2D</li>
+<li>Support for Unity 5.3.0</li>
+</ul>
+<h3 id="171-120415">1.7.1 – 12/04/15</h3>
+<ul>
+<li>Triggers now dispatch public OnEnteredTrigger and OnExitedTrigger events</li>
+<li>Tweaked Rails triggers icons</li>
+<li>Added a Rails snapping parameter to Pro Camera 2D options panel</li>
+<li>Added a left and right handle to the Rails so it’s easier to create new nodes</li>
+</ul>
+<h3 id="170-120115">1.7.0 – 12/01/15</h3>
+<ul>
+<li>New extension – Rails!</li>
+<li>New trigger – TriggerRails!</li>
+<li>Improved extensions architecture and performance</li>
+<li>Added a ManualUpdate option to the UpdateType</li>
+<li>Fixed zoom size when not using Auto-Scale on the Pixel Perfect extension</li>
+</ul>
+<h3 id="163-112315">1.6.3 – 11/23/15</h3>
+<ul>
+<li>Added 3 new methods to the Core API – AddCameraTargets, RemoveAllCameraTargets and Reset</li>
+<li>Highlight correspondent GameObject when selecting a target from the camera targets list</li>
+<li>Allow the Cinematics extension to be called at the start of a scene</li>
+<li>Added the option to zoom by changing the FOV instead of moving the camera</li>
+<li>Fixed a bug where the Trigger Influence exclusive area wouldn’t point to the correct position on the XZ and YZ axes</li>
+<li>Fixed a bug on the Zoom Trigger that could cause the camera to zoom weirdly when not using “SetSizeAsMultiplier”</li>
+</ul>
+<h3 id="162-111615">1.6.2 – 11/16/15</h3>
+<ul>
+<li>Fixed a bug that would show the incorrect triggers gizmos position if using a Circle</li>
+<li>Only show the Zoom trigger preview size when selected</li>
+<li>On the Zoom and Influence triggers, when not using the targets mid point, use the provided target to calculate the distance to the center percentage</li>
+<li>Zoom trigger “Reset Size On Exit” is now “Reset Size On Leave” so it resets progressively as you leave the trigger instead of only once you exit</li>
+<li>Fixed a bug where after deleting boundaries related extensions / triggers the camera could get stuck at (0,0)</li>
+</ul>
+<h3 id="161-111015">1.6.1 – 11/10/15</h3>
+<ul>
+<li>The camera is only parented if using the Shake extension</li>
+<li>Fixed an issue where deleting Cinematic camera targets could throw an (harmless) error to the console</li>
+<li>When using the Cinematics extension, if a target has a Hold Duration less than 0, the camera will follow it indefinitely</li>
+<li>Added a method (GoToNextTarget) to the Cinematics extension that allows you to skip the current target</li>
+<li>Prevent the Game Viewport size on the Pixel Perfect extension to go below (1, 1)</li>
+<li>Fixed a bug where the TriggerBoundaries would have a missing reference if instantiated manually</li>
+</ul>
+<h3 id="160-103015">1.6.0 – 10/30/15</h3>
+<ul>
+<li>Moved Camera Window, Numeric Boundaries and Geometry Boundaries from the core into their own extensions, leaving the core as light as possible</li>
+<li>Added a new powerful extension (Cinematics) that replaces the CinematicFocusTarget</li>
+<li>Added a new demo (TopDownShooter) that shows how to use multiple Pro Camera 2D features in one simple game</li>
+<li>Tweaked Zoom-To-Fit extension to support camera boundaries</li>
+<li>Tweaked Speed-Based-Zoom extension to support camera boundaries</li>
+<li>Forward focus auto-adjusts to the camera size when zooming</li>
+<li>Gizmos for triggers are now shown as circles instead of spheres</li>
+<li>Added the option for triggers to be triggered by a specific GameObject instead of always using the camera targets mid-point</li>
+<li>Renamed Plugins to Extensions and Helpers to Triggers</li>
+</ul>
+<h3 id="153-101615">1.5.3 – 10/16/15</h3>
+<ul>
+<li>Upgraded Shake extension – Presets support, rotation and overall tweaks</li>
+<li>Zooming with perspective cameras is now made by moving the camera instead of changing the field of view to avoid distortion</li>
+<li>Fix TriggerBoundaries left and right gizmos incorrect size on XZ and YZ axis</li>
+<li>Pixel-perfect is now maintained during shakes</li>
+</ul>
+<h3 id="152-100215">1.5.2 – 10/02/15</h3>
+<ul>
+<li>Fixed bug when applying influences on XZ and YZ axis</li>
+</ul>
+<h3 id="151-093015">1.5.1 – 09/30/15</h3>
+<ul>
+<li>Added option to reset size when exiting a zoom trigger</li>
+<li>Added option to disable Zoom-To-Fit plugin when there’s only one target</li>
+<li>Disable Parallax plugin toggle button when in perspective mode</li>
+<li>Fixed a bug when adding targets progressively</li>
+<li>Tweaked the CinematicFocusTrigger to take all influences in consideration when returning from the cinematic position</li>
+<li>Added an optional “duration” parameter to the RemoveCameraTarget method that allows to remove a camera target progressively by reducing it’s influence over time</li>
+<li>Added an optional “duration” parameter to the UpdateScreenSize method that allows to manually update the screen size progressively</li>
+</ul>
+<h3 id="150-092615">1.5.0 – 09/26/15</h3>
+<ul>
+<li>Added a new plugin, Speed Based Zoom that adjusts the zoom based on how fast the camera is moving.</li>
+</ul>
+<h3 id="141-091715">1.4.1 – 09/17/15</h3>
+<ul>
+<li>Fixed a bug where if the camera is a prefab it would loose its targets on scene load, if the changes weren’t saved</li>
+</ul>
+<h3 id="140-091115">1.4.0 – 09/11/15</h3>
+<ul>
+<li>Pixel-perfect support!</li>
+<li>Fixed a few more bugs related to setting the Time.timeScale to 0 (Thanks to the users who reported this issue and helped solving it!)</li>
+<li>Added a user-guide link to the top of Pro Camera 2D editor for easier access to the documentation</li>
+</ul>
+<h3 id="131-083115">1.3.1 – 08/31/15</h3>
+<ul>
+<li>Added a ParallaxObject MonoBehaviour that makes a GameObject position on the scene view to match the same relative position to the main parallax layer during runtime</li>
+<li>Fixed slight camera movement on start when no targets are added</li>
+<li>Fixed a bug where if Time.timeScale was put to 0 the camera would stop following its targets afterwards</li>
+<li>Fixed a few Playmaker actions descriptions</li>
+<li>Fixed target vertical offset when on XZ and YZ axis</li>
+<li>Fixed PointerInfluence plugin on XZ and YZ axes</li>
+</ul>
+<h3 id="130-081415">1.3.0 – 08/14/15</h3>
+<ul>
+<li>Full compatibility with 2DToolkit!</li>
+<li>Added namespace to UpdateType and MovementAxis enums to avoid conflicts with other packages</li>
+<li>Added the option to set the TriggerZoom helper size as a direct value instead of as a multiplier</li>
+<li>Added a new method to stop shaking and a flag to check if the camera is currently shaking</li>
+<li>Fixed bug with InfluenceTrigger not smoothing correctly the value on first entrance if ExclusiveInfluencePercentage is 1</li>
+</ul>
+<h3 id="120-080615">1.2.0 – 08/06/15</h3>
+<ul>
+<li>Added support for perspective cameras</li>
+<li>Fixed bug with camera getting stuck when using Camera Window and Numeric Boundaries</li>
+<li>Fixed bug that made camera float away when using an offset on a specific axis and turned off following on that same axis</li>
+</ul>
+<h3 id="110-080315">1.1.0 – 08/03/15</h3>
+<ul>
+<li>Custom PlayMaker actions for full API support</li>
+<li>Fix for AdjustCameraTargetInfluence method when starting at values different than zero</li>
+</ul>
+<h3 id="100-072915">1.0.0 – 07/29/15</h3>
+<ul>
+<li>Public release</li>
+</ul></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <div class="center">Copyright 2018 Pro Camera 2D | All Rights Reserved | A product by <a href="http://www.luispedrofonseca.com"><strong>Luís Pedro Fonseca</strong></a><p> </p></div>
+            
+                <div class="center">
+                    <a href="http://www.twitter.com/lpfonseca" target="_blank" title="Twitter"><img alt="Twitter" src="../images/footer/icon-twitter.png" width="32" height="24"></a>
+                    <a href="http://forum.unity3d.com/threads/released-procamera2d-the-definitive-2d-camera-solution-for-unity.344436/" target="_blank" title="Unity Forums"><img alt="Unity Forums" src="../images/footer/icon-unity.png" width="32" height="24"></a>
+                    <a href="/support" title="Email"><img alt="Email" src="../images/footer/icon-email.png" width="32" height="24"></a>
+                </div>
+                <p></p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../js/custom.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Enter your search terms below.</p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
