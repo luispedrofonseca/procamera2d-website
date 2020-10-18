@@ -1,9 +1,0 @@
-{
-"TOTAL_MEMORY": 268435456,
-"dataUrl": "platformer-demo-webgl.data.unityweb",
-"asmCodeUrl": "platformer-demo-webgl.asm.code.unityweb",
-"asmMemoryUrl": "platformer-demo-webgl.asm.memory.unityweb",
-"asmFrameworkUrl": "platformer-demo-webgl.asm.framework.unityweb",
-"splashScreenStyle": "Dark",
-"backgroundColor": "#222C36"
-}

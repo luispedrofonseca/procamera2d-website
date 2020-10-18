@@ -261,40 +261,15 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#latest-release">LATEST RELEASE</a></li>
+        <li class="main active"><a href="#features-demo-webgl">FEATURES DEMO (WebGL)</a></li>
         
-    
-        <li class="main "><a href="#how-it-works">How it works</a></li>
+            <li><span class="toc-children"><a href="#latest-release">LATEST RELEASE</a></span></li>
         
-            <li><span class="toc-children"><a href="#core">CORE</a></span></li>
+            <li><span class="toc-children"><a href="#how-it-works">How it works</a></span></li>
         
-            <li><span class="toc-children"><a href="#extensions">EXTENSIONS</a></span></li>
+            <li><span class="toc-children"><a href="#features">Features</a></span></li>
         
-            <li><span class="toc-children"><a href="#triggers">TRIGGERS</a></span></li>
-        
-    
-        <li class="main "><a href="#features">Features</a></li>
-        
-            <li><span class="toc-children"><a href="#easy-to-use">Easy to use</a></span></li>
-        
-            <li><span class="toc-children"><a href="#optimized">Optimized</a></span></li>
-        
-            <li><span class="toc-children"><a href="#modular">Modular</a></span></li>
-        
-            <li><span class="toc-children"><a href="#battle-tested">Battle-tested</a></span></li>
-        
-            <li><span class="toc-children"><a href="#extensible">Extensible</a></span></li>
-        
-            <li><span class="toc-children"><a href="#free-updates">Free Updates</a></span></li>
-        
-            <li><span class="toc-children"><a href="#support">Support</a></span></li>
-        
-    
-        <li class="main "><a href="#customers-reviews">Customers Reviews</a></li>
-        
-            <li><span class="toc-children"><a href="#twitter">Twitter</a></span></li>
-        
-            <li><span class="toc-children"><a href="#asset-store">Asset Store</a></span></li>
+            <li><span class="toc-children"><a href="#customers-reviews">Customers Reviews</a></span></li>
         
     
     </ul>
@@ -322,6 +297,34 @@
   </div>
 </div>
 
+<p>&nbsp;</p>
+<h1 id="features-demo-webgl">FEATURES DEMO (WebGL)</h1>
+<ul>
+<li>Use the arrow keys (or WAD) to move and jump.</li>
+<li>Switch scenes on the top-right corner navigation.</li>
+<li>Switch camera modes on the top-right button.</li>
+<li>All demo scenes are included in the package.</li>
+</ul>
+<div id="webgl" class="webgl-play">
+    <img alt="Click to Play!" src="../images/demos/unity_click_to_play.png" onclick="loadWebGL()" />
+</div>
+
+<script type="text/javascript">
+    function loadWebGL() 
+    {
+        var params = window.location.toString().split('?')[1];
+        document.getElementById("webgl").innerHTML = '<iframe src= "../platformer-demo-webgl/' + '?' + params + '" width="800" height="575" frameborder="0" scrolling="no"></iframe>';
+    }
+</script>
+
+<blockquote>
+<ul>
+<li>It might take a few seconds for the demo to load. Please be patient.</li>
+<li>This demo runs in WebGL which is only supported by modern browsers.</li>
+<li>Unity's WebGL performance is degraded in comparison to other platforms.</li>
+</ul>
+</blockquote>
+<p>&nbsp;</p>
 <h3 id="latest-release">LATEST RELEASE</h3>
 <ul>
 <li><strong>Version 2.7.2</strong> - Sep 8th, 2020 - Check the <a href="about/">ChangeLog</a> for more information</li>
